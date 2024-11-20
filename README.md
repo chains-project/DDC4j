@@ -8,7 +8,7 @@ A Degree Project, First Cycle, to perform diverse double-compiling for Java.
 * [Diverse Double-Compiling to Harden Cryptocurrency Software (Master's thesis KTH 2023)](http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-323901)
 * [Improving Trust in Software through Diverse Double-Compiling and Reproducible Builds](https://www.duo.uio.no/handle/10852/65737)
 
-Student: [Elias Lundell](https://eliaslundell.se)
+Student: [Elias Lundell](https://eliaslundell.se), [Eskil Nyberg]()
 Supervisor: [Aman Sharma](https://algomaster99.github.io/)
 Examiner: [Martin Monperrus](https://www.monperrus.net/martin)
 
