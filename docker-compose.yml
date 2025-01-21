@@ -1,0 +1,11 @@
+services:
+  ubuntu-ddc:
+    platform: linux/amd64
+    build: ./ubuntu/
+    container_name: ubuntu-ddc
+    deploy:
+      resources:
+        limits:
+          cpus: '10.00'
+          memory: 12000M
+
