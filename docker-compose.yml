@@ -3,6 +3,6 @@ services:
     platform: linux/amd64
     build: 
       context: ./ubuntu/
-      network_mode: host
+      network: host
     container_name: ubuntu-ddc
     network_mode: host
