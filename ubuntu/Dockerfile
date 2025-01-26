@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt-get update && apt-get install -y \
-        git vim tree \
+        git vim tree strace \
         file zip unzip curl autoconf texinfo lbzip2 bison libasound2-dev libcups2-dev libfontconfig1-dev \
         libx11-dev libxext-dev libxrender-dev libxrandr-dev libxtst-dev libxt-dev
 
