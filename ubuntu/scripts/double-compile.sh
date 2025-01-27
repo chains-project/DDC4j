@@ -20,4 +20,4 @@ make clean
 git clean -fd
 /root/scripts/bootstrap.sh $source_code_folder $output_folder/stage1_$grand_parent_compiler_version
 cp -r $source_code_folder/build/linux-x86_64-server-release/images/jdk $output_folder/stage2_$grand_parent_compiler_version
-rm -rf $output_folder/stage1_$grand_parent_compiler_version/demo
+rm -rf $output_folder/stage2_$grand_parent_compiler_version/demo
