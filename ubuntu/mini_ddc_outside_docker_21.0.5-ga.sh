@@ -7,10 +7,12 @@ function ddc {
     local path=$2
     echo "PERFORMING DDC ON 21.0.5-ga WITH $version ($(date))"
     if [ -d "$path" ]; then
+        echo "RUNNING ON LOCAL JDK"
         docker create -t --entrypoint "/bin/bash" --network=host --name ddc_container $image /root/scripts/dc_21.0.5-ga_from_local.sh $version /root/local_jdk
         docker cp $path ddc_container:/root/local_jdk
         docker start -a ddc_container
     else
+        echo "RUNNING ON SDKMAN JDK"
         docker create -t --entrypoint "/bin/bash" --network=host --name ddc_container $image /root/scripts/dc_21.0.5-ga_from_sdkman.sh $version
         docker start -a ddc_container
     fi
