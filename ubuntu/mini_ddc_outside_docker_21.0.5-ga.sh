@@ -5,7 +5,6 @@ image=$1
 function ddc {
     local version=$1
     local path=$2
-    local 
     echo "PERFORMING DDC ON 21.0.5-ga WITH $version ($(date))"
     if [ -d "$path" ]; then
         docker create -t --entrypoint "/bin/bash" --network=host --name ddc_container $image /root/scripts/dc_21.0.5-ga_from_local.sh $version /root/local_jdk

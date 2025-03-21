@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source /root/.sdkman/bin/sdkman-init.sh
-
 version=$1
 path=$2
 
