@@ -4,7 +4,7 @@ image=$1
 
 function ddc {
     local version=$1
-    local local_path=$2
+    local path=$2
     local 
     echo "PERFORMING DDC ON 21.0.5-ga WITH $version ($(date))"
     if [ -d "$path" ]; then
