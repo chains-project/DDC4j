@@ -2,6 +2,11 @@
 
 image=$1
 
+if [ -z "$image" ]; then
+    echo "USAGE: mini_ddc_outside_docker_21.0.5-ga.sh <image>"
+    exit 1
+fi
+
 function ddc {
     local version=$1
     local path=$2
