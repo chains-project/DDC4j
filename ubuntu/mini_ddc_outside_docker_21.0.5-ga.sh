@@ -22,8 +22,11 @@ function ddc {
         docker start -a ddc_container
     fi
 
-    docker cp ddc_container:/root/from_$version .
+    docker cp ddc_container:/root/from_$version.tar.gz .
     docker rm ddc_container
+
+    tar -xzf from_$version.tar.gz
+    rm from_$version.tar.gz
     echo "DONE COMPILING AND COPYING $version ($(date))"
 }
 
