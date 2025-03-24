@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source /root/.sdkman/bin/sdkman-init.sh
 yes | sdk install java 21.0.5-tem
 
 cd /root
