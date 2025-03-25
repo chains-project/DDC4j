@@ -32,7 +32,7 @@ function ddc {
     docker cp ddc_container:/root/from_$version.tar.gz .
     docker rm ddc_container
 
-    tar -xzf from_$version.tar.gz --strip-components=2
+    tar -xzf from_$version.tar.gz --strip-components=1
     rm from_$version.tar.gz
     echo "DONE COMPILING AND COPYING $version ($(date))"
 }
