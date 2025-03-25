@@ -1,0 +1,8 @@
+services:
+  jdk_from_jikes:
+    platform: linux/amd64
+    build: 
+      context: .
+      network: host
+    container_name: jdk_from_jikes
+    network_mode: host
