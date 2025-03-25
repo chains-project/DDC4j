@@ -3,9 +3,16 @@
 image=$1
 
 if [ -z "$image" ]; then
-    echo "USAGE: mini_ddc_outside_docker_21.0.5-ga.sh <image>"
-    exit 1
+    read -p "No image specified. Use default image 'ddc-ubuntu_ddc-ubuntu'? (y/n): " choice
+    if [ "$choice" = "y" ]; then
+        image="ddc-ubunt_ddc-ubuntu"
+    else
+        echo "USAGE: mini_ddc_outside_docker_21.0.5-ga.sh <image>"
+        echo "Exiting."
+        exit 1
+    fi
 fi
+
 
 function ddc {
     local version=$1
