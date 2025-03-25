@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
 RUN curl -s "https://get.sdkman.io" | /bin/bash
 RUN chmod a+x "$SDKMAN_DIR/bin/sdkman-init.sh"
 
+RUN git clone --depth 1 --branch jdk-21.0.5-ga https://github.com/openjdk/jdk21u /root/jdk21u
+
 COPY scripts /root/scripts
 
 CMD ["sleep", "infinity"]
