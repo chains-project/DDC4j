@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
 #       done manually when the container is started
 # NOTE: guix pull takes a loooong time, which is why this is done so early in the Dockerfile
 #       to avoid having to wait for it to finish every time the Dockerfile is rebuilt
-RUN ~root/.config/guix/current/bin/guix-daemon --build-users-group=guixbuild & \
+RUN guix-daemon --build-users-group=guixbuild & \
+        sleep 3 && \
         guix pull
 
 RUN apt-get install -y \
