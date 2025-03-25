@@ -2,7 +2,7 @@ services:
   ubuntu-ddc:
     platform: linux/amd64
     build: 
-      context: ./ubuntu/
+      context: .
       network: host
     container_name: ubuntu-ddc
     network_mode: host
