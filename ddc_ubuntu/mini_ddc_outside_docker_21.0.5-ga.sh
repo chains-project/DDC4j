@@ -3,9 +3,9 @@
 image=$1
 
 if [ -z "$image" ]; then
-    read -p "No image specified. Use default image 'ddc-ubuntu_ddc-ubuntu'? (y/n): " choice
+    read -p "No image specified. Use default image 'ddc_ubuntu-ubuntu-ddc'? (y/n): " choice
     if [ "$choice" = "y" ]; then
-        image="ddc-ubuntu_ddc-ubuntu"
+        image="ddc_ubuntu-ubuntu-ddc"
     else
         echo "USAGE: mini_ddc_outside_docker_21.0.5-ga.sh <image>"
         echo "Exiting."
