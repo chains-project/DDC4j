@@ -20,7 +20,7 @@ RUN wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh &&
 #       done manually when the container is started
 # NOTE: guix pull takes a loooong time, which is why this is done so early in the Dockerfile
 #       to avoid having to wait for it to finish every time the Dockerfile is rebuilt
-RUN guix-daemon --build-users-group=guixbuild & \
+RUN ~root/.config/guix/current/bin/guix-daemon --build-users-group=guixbuild & \
         sleep 3 && \
         guix pull
 
