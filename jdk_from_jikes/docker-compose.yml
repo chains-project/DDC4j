@@ -1,8 +1,15 @@
 services:
-  jdk_from_jikes:
+  bootstrappable-builds_java_bootstrap:
     platform: linux/amd64
     build: 
-      context: .
+      context: ./bootstrappable-builds_java_bootstrap/
       network: host
-    container_name: jdk_from_jikes
+    container_name: bootstrappable-builds_java_bootstrap
+    network_mode: host
+  jdk_6_to_21:
+    platform: linux/amd64
+    build: 
+      context: ./jdk_1.6_to_21/
+      network: host
+    container_name: jdk_6_to_21
     network_mode: host
