@@ -6,7 +6,7 @@ services:
       network: host
     container_name: bootstrappable-builds_java_bootstrap
     network_mode: host
-    privileged: true
+    privileged: true # Required for guix in docker
   jdk_6_to_21:
     platform: linux/amd64
     build: 
