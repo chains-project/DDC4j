@@ -5,9 +5,14 @@ ENV TZ UTC
 # No other dependencies are installed at this stage to enable adding dependencies without
 # having to wait for guix pull to finish every time the Dockerfile is rebuilt
 RUN apt-get update && apt-get install -y \
-        # guix is the functional package manager which bootstrappable builds
-        # uses to reproducibly bootstrap the jdk from jikes
-        guix
+        wget gpg xz-utils
+
+
+# guix is the functional package manager which bootstrappable builds
+# uses to reproducibly bootstrap the jdk from jikes
+RUN wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh && \
+        chmod +x guix-install.sh && \
+        yes | ./guix-install.sh
 
 # Docker does not allow running the guix-daemon with systemctl, so we run it manually
 # NOTE: guix-daemon will not be started when running the docker container, so this must be
