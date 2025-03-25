@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 # guix is the functional package manager which bootstrappable builds
 # uses to reproducibly bootstrap the jdk from jikes
+WORKDIR /root
 RUN wget https://git.savannah.gnu.org/cgit/guix.git/plain/etc/guix-install.sh && \
         chmod +x guix-install.sh && \
         yes | ./guix-install.sh
