@@ -25,7 +25,7 @@ def extract_dependencies(input_path, output_path):
     dependency_lines = [nodes[n][1] for n in nodes if not keyword_pattern.search(nodes[n][1])]
 
     with open(output_path, 'w') as f:
-        f.write('\n'.join(dependency_lines).replace("@","-") + '\n')
+        f.write('\n'.join(dependency_lines) + '\n')
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
