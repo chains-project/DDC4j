@@ -15,6 +15,8 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
 # Setup SDKMAN
 sudo apt-get install -y zip unzip
 curl -s "https://get.sdkman.io" | bash
