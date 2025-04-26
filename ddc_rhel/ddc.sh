@@ -53,7 +53,7 @@ function double_compile_from_sdkman {
     local version=$1
     echo "[DDC]: Performing ddc from sdkman for $version"
     echo "[DDC]: Installing $version with sdkman"
-    yes | sdk install java $version
+    yes | sdk install java $version
     echo "[DDC]: Done installing $version with sdkman"
 
     first_compile $version /home/ddc4j/.sdkman/candidates/java/$version
