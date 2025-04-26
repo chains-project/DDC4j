@@ -49,6 +49,7 @@ function second_compile {
 }
 
 function double_compile_from_sdkman {
+    source /home/ddc4j/.sdkman/bin/sdkman-init.sh
     local version=$1
     echo "[DDC]: Performing ddc from sdkman for $version"
     echo "[DDC]: Installing $version with sdkman"
