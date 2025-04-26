@@ -21,7 +21,7 @@ function first_compile {
     export PATH=$PATH_MINIMAL:$boot_jdk_path/bin
 
     # Set vendor name to Eclipse Adoptium avoid diff in jrt-fs.jar 
-    bash ../jdk20u/configure --with-boot-jdk=$boot_jdk_path --with-vendor-name='Eclipse Adoptium'
+    bash ../jdk20u/configure --verbose --with-vendor-name='Eclipse Adoptium' --with-version-opt=LTS --without-version-pre --with-version-build=11 --with-boot-jdk=$boot_jdk_path --with-devkit=/home/ddc4j/temurin_build/jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu --with-debug-level=release --with-native-debug-symbols=external --with-source-date=version --disable-ccache --with-build-user=admin --with-jvm-variants=server --disable-warnings-as-errors --enable-dtrace --with-freetype=bundled --with-zlib=bundled
     make images
 
     echo "[DDC]: Done compiling JDK20 with boot jdk: $version"
