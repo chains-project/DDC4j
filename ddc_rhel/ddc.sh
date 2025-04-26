@@ -40,8 +40,7 @@ function second_compile {
     
     export PATH=$PATH_MINIMAL:$boot_jdk_path/bin
     
-    # Set vendor name to Eclipse Adoptium avoid diff in jrt-fs.jar 
-    bash ../jdk21u/configure --with-boot-jdk=$boot_jdk_path --verbose --with-vendor-name='Eclipse Adoptium' --with-vendor-url=https://adoptium.net/ --with-vendor-bug-url=https://github.com/adoptium/adoptium-support/issues --with-vendor-vm-bug-url=https://github.com/adoptium/adoptium-support/issues --with-version-opt=LTS --without-version-pre --with-version-build=11 --with-vendor-version-string=Temurin-21.0.5+11 --with-boot-jdk=$boot_jdk_path --with-devkit=/home/ddc4j/temurin_build/jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu --with-debug-level=release --with-native-debug-symbols=external --with-source-date=version --disable-ccache --with-build-user=admin --with-jvm-variants=server --disable-warnings-as-errors --enable-dtrace --with-freetype=bundled --with-zlib=bundled
+    bash ../jdk21u/configure --verbose --with-vendor-name='Eclipse Adoptium' --with-vendor-url=https://adoptium.net/ --with-vendor-bug-url=https://github.com/adoptium/adoptium-support/issues --with-vendor-vm-bug-url=https://github.com/adoptium/adoptium-support/issues --with-version-opt=LTS --without-version-pre --with-version-build=11 --with-vendor-version-string=Temurin-21.0.5+11 --with-boot-jdk=$boot_jdk_path --with-devkit=/home/ddc4j/temurin_build/jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu --with-debug-level=release --with-native-debug-symbols=external --with-source-date=version --disable-ccache --with-build-user=admin --with-jvm-variants=server --disable-warnings-as-errors --enable-dtrace --with-freetype=bundled --with-zlib=bundled
     make images
 
     echo "[DDC]: Done compiling JDK21 with boot jdk: $version"
