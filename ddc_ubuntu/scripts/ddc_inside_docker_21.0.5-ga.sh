@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Can be ran inside a docker container, note the storage usage in the container might be overwhelming. It is recommended to run ddc_21.0.5-ga.sh in the parent folder to isolate each compilation.
+
 # --- JDK 21.0.5 ---
 echo "PERFORMING DDC ON 21.0.5-ga WITH 21.0.5-tem"
 /root/scripts/dc_21.0.5-ga_from_sdkman.sh 21.0.5-tem

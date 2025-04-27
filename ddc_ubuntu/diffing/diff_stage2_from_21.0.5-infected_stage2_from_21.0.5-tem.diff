@@ -1,0 +1,14 @@
+Binary files stage2_21.0.5-tem/jmods/java.base.jmod and stage2_21.0.5-infected_local/jmods/java.base.jmod differ
+Binary files stage2_21.0.5-tem/jmods/jdk.compiler.jmod and stage2_21.0.5-infected_local/jmods/jdk.compiler.jmod differ
+Binary files stage2_21.0.5-tem/lib/modules and stage2_21.0.5-infected_local/lib/modules differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$0.class and stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$0.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$all.class and stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$all.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$default.class and stage2_21.0.5-infected_local/lib/modules_extracted/java.base/jdk/internal/module/SystemModules$default.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/java.base/module-info.class and stage2_21.0.5-infected_local/lib/modules_extracted/java.base/module-info.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover.class and stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1MethodBodyRemover.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1ScanNested.class and stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$1ScanNested.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$2.class and stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$2.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$InitialFileParser.class and stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler$InitialFileParser.class differ
+Binary files stage2_21.0.5-tem/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler.class and stage2_21.0.5-infected_local/lib/modules_extracted/jdk.compiler/com/sun/tools/javac/main/JavaCompiler.class differ
+Binary files stage2_21.0.5-tem/lib/server/classes.jsa and stage2_21.0.5-infected_local/lib/server/classes.jsa differ
+Binary files stage2_21.0.5-tem/lib/server/classes_nocoops.jsa and stage2_21.0.5-infected_local/lib/server/classes_nocoops.jsa differ

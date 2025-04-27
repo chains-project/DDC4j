@@ -38,6 +38,14 @@ function ddc {
 }
 
 # --- JDK 21.0.5 ---
-ddc 21.0.5-infected_local /root/21.0.5_infected_jdk
+# Automatically installed by SDKMAN
 ddc 21.0.5-tem
 ddc 21.0.5-oracle
+ddc 21.0.5-open
+ddc 21.0.5-kona
+
+# --- Locally available ---
+# Compile and locate at /root/21.0.5_infected_jdk
+ddc 21.0.5-infected_local /root/21.0.5_infected_jdk
+# This is a gnu guix pack generated with `guix pack openjdk@21.0.5:jdk --no-substitutes`. The tarball is extracted inside the /root/21.0.2_bootstrapped_jdk/ folder. To install the entire guix store in the correct place it is copied to /gnu inside the container
+ddc 21.0.2-bootstrapped_local /root/21.0.2_bootstrapped_jdk/gnu /gnu /gnu/store/9y01x6ibci3l9bsrfshwgmdd12d7b2jw-openjdk-21.0.2-jdk
