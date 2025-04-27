@@ -71,6 +71,8 @@ setup
 
 double_compile_from_sdkman 19.0.2-tem
 double_compile_from_sdkman 19.0.2-open
+double_compile_from_sdkman 19.0.2-oracle
+double_compile_from_sdkman 19.0.2-zulu
 
-first_compile 21.0.5-guix-bootstrapped /gnu/store/9y01x6ibci3l9bsrfshwgmdd12d7b2jw-openjdk-21.0.2-jdk
-second_compile 21.0.5-guix-bootstrapped /home/ddc4j/temurin_build/ddc/jdk21_from-21.0.5-guix-bootstrapped/images/jdk
+first_compile 19.0.2-guix-bootstrapped /gnu/store/agb85346q26zdxncx89xmqs65arjhw9n-openjdk-19.0.2-jdk
+second_compile 19.0.2-guix-bootstrapped /home/ddc4j/temurin_build/ddc/jdk21_from-19.0.2-guix-bootstrapped/images/jdk
