@@ -1,3 +1,1 @@
-*.pkl
-strace_analysis/*.log
 .DS_Store
